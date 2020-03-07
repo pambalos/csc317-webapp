@@ -7,13 +7,16 @@ Repository for CSC 317 webapp. This repository will represent the files sitting 
 ./resources -> any images, css, or other resource files
 
 ## Commit Process
+
 ### Please do not commit directly to the master branch. 
 
-Open a new branch using 'git checkout -b <your branch>', ie 'git checkout -b homepage'
+Open a new branch with: 
+
+#### git checkout -b branchName
 
 Then when you are ready to commit your changes, commit with a good message:
 
-'git checkout -m "your commit message, give details"
+#### git checkout -m 'your commit message, give details'
 
 Then, you can push. 
 

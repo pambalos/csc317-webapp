@@ -3,4 +3,5 @@ Repository for CSC 317 webapp. This repository will represent the files sitting 
 
 ## Structure
 ./ -> any HTML files
+
 ./resources -> any images, css, or other resource files

@@ -1,7 +1,34 @@
+.header {
+  padding: 30px !important;
+  text-align: center !important;
+  background: #292727 !important;
+  color: goldenrod !important;
+}
 .navbar {
     margin: 0 0;
-    background-color: darkslategray;
+    background-color: #292727;
     width: 100%;
+}
+
+a.account:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a.account:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a.account:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a.account:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders
@@ -31,6 +58,7 @@
     text-decoration: none;
 }
 */
+
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {height: 450px}

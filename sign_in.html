@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 --> 
 </head>
-<body style="margin: 0;">
+<body>
 <!--div class = "navbar">
     <ul class = "navbar-list">
         <li class="navbar-item left-item"><a>Home</a></li>
@@ -51,7 +51,7 @@
         <li><a href="#">FAQ</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="./sign in.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+        <li class="active"><a href="./sign_in.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
         <li><a href="#"><i class='fas fa-cart-plus'></i> Cart</a></li>
       </ul>
     </div>
@@ -80,25 +80,28 @@
       <td><a href="index.html">Home</a></td>
       <td><a href="product.html">Products</a></td>
       <td><a href="about.html">About</a></td>
-      <td><a href="#">FAQ</a></td>
+      <td><a href="faq.html">FAQ</a></td>
       <td colspan="3">&nbsp;</td>
-      <td align="right"><a href="./sign in.html">Sign In</a></td>
+      <td align="right"><a href="sign_in.html">Sign In</a></td>
       <td align="right"><a>Cart</a></td>
   </tr>
 </table>
 
 <form>
-  <h2><b>Forget your password?</b></h2>
-  <p>Enter your email and we'll send instructions to reset your password.</p>
-    
-  <label for="email"><b>Email address</b></label><br>
-  <input type="text" placeholder="Enter Email" name="email" maxlength="30" size="30" required/><br>
-
-  <button type="submit">Send Email to Reset Password</button>
+  <h2><b>Sign In</b></h2>
+  <p>New to Gold For Code?  <a href="./register.html" class="account"> Create an account.</a></p>
+  <label for="email"><b>Email</b></label><br>
+  <input type="text" placeholder="Enter Email" name="email" maxlength="30" size="30" required/><br><br>
+      
+  <label for="psw"><b>Password</b></label><br>
+  <input type="text" placeholder="Enter Password" name="psw" maxlength="30" size="30" required/>
+  <p><a href="./forget_psw.html">Forget password?</a></p><br>
+  <input type="checkbox" checked="unchecked" name="remember"> Keep me signed in. <br>
+  <p>By signing in to your account,you agree to our <a href="privacy.html">Privacy Policy</a>and <a href="terms_and_conditions.html">Terms & Conditions.</a></p>
+  <button type="submit">Sign In</button>
 </form>
 
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <footer>
   <table width="100%" bgcolor="#f5f5dc">
     <tr align="left">
@@ -107,7 +110,7 @@
       <th>Help & FAQs</th>
     </tr>
     <tr>
-      <td><a href="contactus.html">Contact Us</a></td>
+      <td><a href="contact_us.html">Contact Us</a></td>
       <td><a href="about.html">About Gold For Code</a></td>
       <td><a href="faq.html">FAQ</a></td>
     </tr>
@@ -128,5 +131,9 @@
     </tr>
   </table>
 </footer>
+
+
+
+
 </body>
 </html>

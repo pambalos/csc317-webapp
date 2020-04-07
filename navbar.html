@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <!-- <link rel="stylesheet" type="text/css" href="resources/styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="resources/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    -->
 </head>
-<body topmargin="0" leftmargin="0" rightmargin="0">
-    <table id = "navbar" width="100%" bgcolor="#f5f5dc">
-        <tr>
-            <td><a href="index.html">Home</a></td>
-            <td><a href="product.html">Products</a></td>
-            <td><a href="about.html">About</a></td>
-            <td><a href="faq.html">FAQ</a></td>
-            <td colspan="3">&nbsp;</td>
-            <td align="right"><a href="sign_in.html">Sign In</a></td>
-            <td align="right"><a>Cart</a></td>
-        </tr>
-    </table>
-</body>
-<!--
-<body bgcolor="#2f4f4f">
-    <div class = "navbar">
-        <ul class = "navbar-list">
-            <li class="navbar-item left-item"><a>Home</a></li>
-            <li class="navbar-item left-item"><a>Products</a></li>
-            <li class="navbar-item right-item"><a>Login</a></li>
-            <li class="navbar-item right-item"><a>Logout</a></li>
-        </ul>
+<body>
+
+<!--header  please copy to your page-->
+<div class="header">
+    <img id="GFC" src="resources/Gold_for_Code.jpg" alt="Gold For Code">
+</div>
+
+<!--please pay attention to the "active" page when you copy navbar to your page-->
+<nav class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+
+    <div class="navbar-right">
+        <div class="dropdown">
+            <button class="dropbtn">
+              <i class="fa fa-fw fa-user"></i> Sign In <i class="fa fa-caret-down"></i>
+            </button>
+              <div class="dropdown-content">
+                <a href="sign_in.html">Sign In</a>
+                <a href="register.html">Sign Up</a>
+                <a href="account.html">Account</a>
+              </div>
+        </div> 
+        <a href="Cart.html"><i class="fa fa-shopping-cart"></i> Cart</a> 
     </div>
-</body> -->
+</nav>
+
+</body>
 </html>

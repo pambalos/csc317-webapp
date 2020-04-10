@@ -6,6 +6,7 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 /* header*/
@@ -112,7 +113,7 @@ footer{
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
+	margin-top: 0px;
 	border-top: 3px solid #3C3F4D;
 }
  
@@ -270,7 +271,7 @@ footer{
 
 /*  Privacy policy  & Terms and conditions */
 .policy-container{
-	margin: 50px;
+	margin: 50px 50px 100px 50px;
 	box-shadow:0px 0px 10px #CFAC79;
 	border-radius: 10px;
 	padding: 20px;
@@ -295,6 +296,7 @@ footer{
 .policy-container .policy-links a{
 	color: inherit;
 }
+
 
 
 
@@ -386,7 +388,7 @@ footer{
 #container{
 	width: 90%;
 	height: auto;
-	margin: 0 auto;
+	margin: 0 auto 100px;
 }
   
 .accordion label{
@@ -455,6 +457,79 @@ input#q9{
   
 .arrow{
 	color: #666666;
+}
+  
+
+
+
+/*   register  */
+.form-container{
+	background-image: url(form_background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	min-height: 800px;
+	color: whitesmoke;
+	
+}
+
+.form-container .form{
+	margin: 100px auto;
+	max-width: 320px;
+	padding: 45px;
+	background-color: rgba(0,0,0, 0.75);
+}
+
+.form-container .form input[type=text], 
+.form-container .form input[type=password] {
+	width: 100%;
+	padding: 10px 5px 10px 5px;
+	margin: 5px 0px 10px 0;
+	border: none;
+	background: #f1f1f1;
+}
+.form-container .form input[type=text]:focus, 
+.form-container .form input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+.form-container .form .form-button{
+	background-color: #00ccff;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.8;
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: bold;
+}
+.form-container .form .form-button2{
+	background-color: #00ccff;
+	color: white;
+	padding: 5px 5px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.8;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.form-container .form .form-button:hover,
+.form-container .form .form-button2:hover{
+	text-shadow:0 -1px 0 rgba(0,0,0,.3),0 0px 30px rgba(0,255,255,.7);	
+	opacity: 1;
+}
+
+.form-container .form a{
+	color: rgb(0, 89, 255);
+}
+.form-container .form a:hover{
+	color: rgb(174, 0, 255);
 }
   
 

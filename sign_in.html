@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gold For Code</title>
-  <title>Gold For Code</title>
   <link rel="stylesheet" type="text/css" href="resources/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--   NO BOOTSTRAP FOR THIS ASSIGNMENT
@@ -25,7 +24,7 @@
 <nav class="navbar">
   <a href="index.html">Home</a>
   <a href="product.html">Products</a>
-  <a class="active" href="about.html">About</a>
+  <a href="about.html">About</a>
   <a href="faq.html">FAQ</a>
 
   <div class="navbar-right">
@@ -43,19 +42,23 @@
   </div>
 </nav>
 
-<form>
-  <h2><b>Sign In</b></h2>
-  <p>New to Gold For Code?  <a href="./register.html" class="account"> Create an account.</a></p>
-  <label for="email"><b>Email</b></label><br>
-  <input type="text" placeholder="Enter Email" name="email" maxlength="30" size="30" required/><br><br>
-      
-  <label for="psw"><b>Password</b></label><br>
-  <input type="text" placeholder="Enter Password" name="psw" maxlength="30" size="30" required/>
-  <p><a href="./forget_psw.html">Forget password?</a></p><br>
-  <input type="checkbox" checked="unchecked" name="remember"> Keep me signed in. <br>
-  <p>By signing in to your account,you agree to our <a href="privacy.html">Privacy Policy</a>and <a href="terms_and_conditions.html">Terms & Conditions.</a></p>
-  <button type="submit">Sign In</button>
-</form>
+<div class="form-container">
+  <form class="form"> 
+    <h2><b>Sign In</b></h2>
+    <p>New to Gold For Code?  <a href="./register.html" class="account"> Create an account.</a></p>
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" name="email" maxlength="30" size="30" required/><br><br>
+        
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" maxlength="30" size="30" required/>
+    <p><a href="./forget_psw.html">Forget password?</a></p><br>
+    <input type="checkbox" checked="unchecked" name="remember"> Keep me signed in. <br>
+    <p>By signing in to your account,you agree to our <a href="privacy.html">Privacy Policy</a>and <a href="terms_and_conditions.html">Terms & Conditions.</a></p>
+    <button type="button" class="form-button">Sign In</button>
+  </form>
+</div>
+
+
 
 <footer class="footer-distributed">
  

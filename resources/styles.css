@@ -408,50 +408,31 @@ footer{
   text-shadow:1px 1px 2px #00ccff, 0 0 20px #00ccff;
 }
 
-.product1
-{
-   grid-area: row1;
-}
-.product2
-{
-   grid-area: row1;
-}
-.product3 {
-   grid-area: row1;
-}
-
-.product4, .product5, .product6 {
-   grid-area: row2;
-}
-
-.product7, .product8, .product9 {
-   grid-area: row3;
-}
-
-.product10, .product11, .product12 {
-   grid-area: row4;
-}
-
-.grid {
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(200px, auto);
-  gri-template-areas:
-  ". row1 row1 row1"
-  ". row2 row2 row2"
-  ". row3 row3 row3"
-  ". row4 row4 row4";
-  grid-gap: 100px;
+  margin-left: 200px;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 300px 300px 300px ;
+  justify-content: space-evenly;
+  grid-gap: 10px;
   background-color: #000000;
   color: #444;
-  align-items: end;
 }
 
-.box {
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+.grid-container > div {
+  background-color: #000000;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+.grid-container > div > div > a > img{
+border:5px solid #CFAC79;
+}
+
+.grid-container a{
+text-decoration: none;
+color: #CFAC79;
 }
 
 

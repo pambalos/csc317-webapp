@@ -380,6 +380,146 @@ footer{
 }
 
 
+/* products */
+
+.sidebar {
+  width: 130px;
+  position: fixed;
+  top: 250px;
+  left: 20px;
+  background: #2c292f;
+  padding: 8px 0;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  font-size: 20px;
+  color: #CFAC79;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar a:hover, .dropdown:hover .dropbtn{
+  color: white;
+  text-shadow:0 0px 10px #00ccff;
+}
+.sidebar a.active{
+  color: white;
+  text-shadow:1px 1px 2px #00ccff, 0 0 20px #00ccff;
+}
+
+.grid-container {
+  display: grid;
+  margin-left: 200px;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 300px 300px 300px ;
+  justify-content: space-evenly;
+  grid-gap: 10px;
+  background-color: #000000;
+  color: #444;
+}
+
+.grid-container > div {
+  background-color: #000000;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+.grid-container > div > div > a > img{
+border:5px solid #CFAC79;
+}
+
+.grid-container a{
+text-decoration: none;
+color: #CFAC79;
+}
+
+
+/* individual product page styling */
+ html1, body1 {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+ }
+
+.product {
+  max-width: 1200px;
+  margin-left: 300px;
+  padding: 15px;
+  display: flex;
+}
+
+/* Columns */
+.product-image {
+  width: 65%
+  position: relative;
+  right: 100px;
+}
+
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+}
+
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #CFAC79;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 24px;
+  color: #CFAC79;
+  text-decoration: none;
+  color: #CFAC79;
+}
+.product-description span a{
+    text-decoration: none;
+    color: inherit;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #CFAC79;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #CFAC79;
+  line-height: 24px;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #CFAC79;
+  margin-right: 20px;
+}
+
+.cart-btn {
+  display: inline-block;
+  margin-left: 100px;
+  background-color: #CFAC79;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  padding: 12px 30px;
+}
 
 
 
@@ -390,7 +530,7 @@ footer{
 	height: auto;
 	margin: 0 auto 100px;
 }
-  
+
 .accordion label{
 	display:block;
 	padding: 10px;
@@ -411,7 +551,7 @@ footer{
 	border-top: 1px solid #2c292f;
 	background-color: rgba(255, 228, 196, 0.144);
 }
-  
+
 .accordion p{
 	color: rgb(236, 236, 226);
 	padding: 10px;
@@ -427,23 +567,23 @@ footer{
 	border-radius: 10px;
 	box-shadow:  3px 3px 3px 3px #2c292f, 1px 1px 10px #CFAC79
 }
-  
-#q1:checked ~ .hiddentext, 
-#q2:checked ~ .hiddentext, 
-#q3:checked ~ .hiddentext, 
-#q4:checked ~ .hiddentext, 
-#q5:checked ~ .hiddentext, 
-#q6:checked ~ .hiddentext, 
-#q7:checked ~ .hiddentext, 
-#q8:checked ~ .hiddentext, 
+
+#q1:checked ~ .hiddentext,
+#q2:checked ~ .hiddentext,
+#q3:checked ~ .hiddentext,
+#q4:checked ~ .hiddentext,
+#q5:checked ~ .hiddentext,
+#q6:checked ~ .hiddentext,
+#q7:checked ~ .hiddentext,
+#q8:checked ~ .hiddentext,
 #q9:checked ~ .hiddentext{
 	display: block;
 	visibility: visible;
 	opacity: 1;
 }
-  
-input#q1, 
-input#q2, 
+
+input#q1,
+input#q2,
 input#q3,
 input#q4,
 input#q5,
@@ -454,11 +594,11 @@ input#q9{
 	display: none;
 	position: relative;
 }
-  
+
 .arrow{
 	color: #666666;
 }
-  
+
 
 
 
@@ -471,7 +611,7 @@ input#q9{
 	position: relative;
 	min-height: 800px;
 	color: whitesmoke;
-	
+
 }
 
 .form-container .form{
@@ -481,7 +621,7 @@ input#q9{
 	background-color: rgba(0,0,0, 0.75);
 }
 
-.form-container .form input[type=text], 
+.form-container .form input[type=text],
 .form-container .form input[type=password] {
 	width: 100%;
 	padding: 10px 5px 10px 5px;
@@ -489,7 +629,7 @@ input#q9{
 	border: none;
 	background: #f1f1f1;
 }
-.form-container .form input[type=text]:focus, 
+.form-container .form input[type=text]:focus,
 .form-container .form input[type=password]:focus {
 	background-color: #ddd;
 	outline: none;
@@ -521,7 +661,7 @@ input#q9{
 
 .form-container .form .form-button:hover,
 .form-container .form .form-button2:hover{
-	text-shadow:0 -1px 0 rgba(0,0,0,.3),0 0px 30px rgba(0,255,255,.7);	
+	text-shadow:0 -1px 0 rgba(0,0,0,.3),0 0px 30px rgba(0,255,255,.7);
 	opacity: 1;
 }
 
@@ -531,5 +671,5 @@ input#q9{
 .form-container .form a:hover{
 	color: rgb(174, 0, 255);
 }
-  
+
 

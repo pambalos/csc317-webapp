@@ -687,3 +687,45 @@ input#q9{
 }
 
 
+
+
+
+/*   home     */
+.homebody-container{
+	background-image: url(homepage_background.jpg); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	min-height: 800px;
+	color: whitesmoke;
+}
+
+.container-fluid{
+	margin: 50px 50px 100px 50px;
+	box-shadow:0px 0px 10px #CFAC79;
+	border-radius: 10px;
+	padding: 20px;
+	background-color:  rgba(0, 0, 0, 0.45);
+}
+
+.container-fluid h1{
+	text-align: center;
+	font-family: cursive;
+	text-shadow: 1px 1px 10px #f9f9f9; 
+}
+
+.homebody-container .container-fluid .row .col a{
+    display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  whitesmoke;
+	text-shadow: 1px 1px grey;
+}
+.homebody-container .container-fluid .row .col a:hover{
+    display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: #CFAC79;
+	text-shadow: 1px 1px #00ccff;
+}

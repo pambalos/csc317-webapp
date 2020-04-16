@@ -381,14 +381,18 @@ footer{
 
 
 /* products */
-
 .sidebar {
+  
   width: 130px;
   position: fixed;
   top: 250px;
-  left: 20px;
+  left: 10px;
+  margin-bottom: 300px;
   background: #2c292f;
   padding: 8px 0;
+  box-shadow:0px 0px 10px #CFAC79;
+  border-radius: 10px;
+  
 }
 
 .sidebar a {
@@ -427,13 +431,22 @@ footer{
 }
 
 .grid-container > div > div > a > img{
-border:5px solid #CFAC79;
+	border:3px solid #CFAC79;
+	box-shadow: 3px 3px 2px grey;
+}
+
+.grid-container > div > div > a > img:hover{
+	border:3px solid #CFAC79;
+	box-shadow: 3px 3px 5px #00ccff;
+	cursor: pointer;
 }
 
 .grid-container a{
-text-decoration: none;
-color: #CFAC79;
+	text-decoration: none;
+	color: #CFAC79;
 }
+
+
 
 
 /* individual product page styling */
@@ -449,6 +462,7 @@ color: #CFAC79;
   margin-left: 300px;
   padding: 15px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Columns */

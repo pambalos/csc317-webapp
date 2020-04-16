@@ -4,149 +4,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gold For Code</title>
-<!-- No CSS style for now
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="resources/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--   NO BOOTSTRAP FOR THIS ASSIGNMENT
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
---> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  -->
 </head>
-<body style="margin: 0;">
-<!--div class = "navbar">
-    <ul class = "navbar-list">
-        <li class="navbar-item left-item"><a>Home</a></li>
-        <li class="navbar-item left-item"><a>Products</a></li>
-        <li class="navbar-item left-item"><a>About</a></li>
-        <li class="navbar-item left-item"><a>FAQ</a></li>
-        <li class="navbar-item right-item"><a>Sign In</a></li>
-        <li class="navbar-item right-item"><a>Cart</a></li>
-    </ul>
+<body>
+
+<!--header  please copy to your page-->
+<div class="header">
+  <img id="GFC" src="resources/Gold_for_Code.jpg" alt="Gold For Code">
 </div>
-<div id = "banner">
-</div-->
 
-<header class="header">
-  <h1><center>Gold For Code</center></h1>
-</header>
+<!--please pay attention to the "active" page when you copy navbar to your page-->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="productspage.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="faq.html">FAQ</a>
 
-<!-- top navigation with bootstrap
-<nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="./index.html">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./product.html">Products</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="./sign_in.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
-        <li><a href="#"><i class='fas fa-cart-plus'></i> Cart</a></li>
-      </ul>
-    </div>
+  <div class="navbar-right">
+      <div class="dropdown">
+          <button class="dropbtn">
+            <i class="fa fa-fw fa-user"></i> Sign In <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content">
+              <a href="sign_in.html">Sign In</a>
+              <a href="register.html">Sign Up</a>
+              <a href="account.html">Account</a>
+            </div>
+      </div> 
+      <a href="Cart.html"><i class="fa fa-shopping-cart"></i> Cart</a> 
   </div>
 </nav>
--->
 
-<!-- sign in form with Bootstrap 
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-4 text-left"> 
+
+<div class="policy-container">
+  <h1 id="top">Terms & Conditions</h1>
+  <p>Please review the following terms and conditions ("Terms of Use") that govern your use and purchase of products (collectively, "Use") of our Site. Your Use of our Site constitutes your agreement to follow and be bound by the Terms of Use.</p>
+  <p>THESE TERMS OF USE INCLUDE A CLASS ACTION WAIVER AND REQUIRE BINDING ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES. DETAILS ARE SET FORTH BELOW.</p>
+  <div class="policy-links" style="color: white;">
+    <p><a href="#C1">Site Contents</a></p> 
+    <p><a href="#C2">Disclaimer, Limitation of Liability and Indemnity</a></p> 
+    <p><a href="#C3">Disputes</a></p> 
+    <p><a href="#C4">Applicable Law</a></p> 
+    <p><a href="#C5">Denial of Access</a></p> 
+    <p><a href="#C6">Site Policies, Modification and Severability</a></p> 
+  </div>
+  <h3 id="C1">Site Contents</h3>
+  <p>Unless otherwise noted, the design of the Site, the Site as a whole and all materials that are part of the Site (collectively, "Contents") are copyrights, trademarks, trade dress or other intellectual properties owned, controlled or licensed by Gold For Code. Any use of the Contents without Gold For Code's express written consent is strictly prohibited.<br><a href="#top">Go back to top.</a></p> 
+
+  <h3 id="C2">Disclaimer, Limitation of Liability and Indemnity</h3>
+  <p>EXCEPT AS OTHERWISE EXPRESSLY PROVIDED, THIS SITE, ALL CONTENTS AND ALL PRODUCTS AND SERVICES ARE PROVIDED ON AN "AS IS" BASIS. Gold For Cold DISCLAIMS ALL WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Gold For Cold DOES NOT WARRANT THAT YOUR USE OF THIS SITE WILL BE UNINTERRUPTED OR ERROR FREE, OR THAT THIS SITE OR ITS SERVER ARE FREE OF VIRUSES OR OTHER HARMFUL ELEMENTS. ALTHOUGH Gold For Cold ENDEAVORS TO PROVIDE ACCURATE INFORMATION, IT DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE ACCURACY OR RELIABILITY OF INFORMATION ON THIS SITE. YOUR USE OF THE SITE IS AT YOUR OWN RISK. NEITHER Gold For Cold NOR ITS AFFILIATED OR RELATED ENTITIES OR ITS VENDORS OR CONTENT PROVIDERS SHALL BE LIABLE TO ANY PERSON OR ENTITY FOR ANY DIRECT OR INDIRECT LOSS, DAMAGE (WHETHER ACTUAL, CONSEQUENTIAL, PUNITIVE, SPECIAL OR OTHERWISE), INJURY, CLAIM, OR LIABILITY OF ANY KIND OR CHARACTER WHATSOEVER BASED UPON OR RESULTING FROM YOUR USE OR INABILITY TO USE THIS SITE, OR ANY INFORMATION OR MATERIALS PROVIDED ON THE SITE. Gold For Cold IS NOT LIABLE FOR ANY DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF ANY USER. IF YOU ARE DISSATISFIED WITH THE SITE OR ANY MATERIALS ON THE SITE, OR WITH ANY OF Gold For Cold'S TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE SITE. YOU AGREE TO INDEMNIFY, DEFEND AND HOLD HARMLESS Gold For Cold, ITS SHAREHOLDERS, OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, DISTRIBUTORS, VENDORS AND AFFILIATES FROM AND AGAINST ANY AND ALL THIRD-PARTY CLAIMS, DEMANDS, LIABILITIES, COSTS OR EXPENSES, INCLUDING REASONABLE ATTORNEYS' FEES, RESULTING OR ARISING OUT OF YOUR BREACH OF ANY OF THESE TERMS OF USE. CERTAIN PROVISIONS OF THE FOREGOING PARAGRAPH MAY NOT APPLY TO CONSUMERS WITHIN THE STATE OF NEW JERSEY OR IN OTHER JURISDICTIONS WHERE PROHIBITED BY LAW. <br><a href="#top">Go back to top.</a></p>
+  <h3 id="C3">Disputes</h3>
+  <p>We each agree to bring any dispute in arbitration on an individual basis only, and not on a class, consolidated, representative or collective action basis. If for any reason a claim proceeds in court rather than in arbitration, we each waive any right to a jury trial or to participate in a class action against the other. In addition, we both agree that we each may bring suit in court to enjoin infringement or other misuse of intellectual property rights.
+
+    THIS SECTION LIMITS CERTAIN RIGHTS, INCLUDING THE RIGHT TO MAINTAIN A COURT ACTION, THE RIGHT TO A JURY TRIAL, THE RIGHT TO PARTICIPATE IN ANY FORM OF CLASS OR REPRESENTATIVE CLAIM, THE RIGHT TO ENGAGE IN DISCOVERY EXCEPT AS PROVIDED IN AAA OR JAMS RULES, AND THE RIGHT TO CERTAIN REMEDIES AND FORMS OF RELIEF. OTHER RIGHTS THAT YOU OR Gold For Cold WOULD HAVE IN COURT ALSO MAY NOT BE AVAILABLE IN ARBITRATION. <br><a href="#top">Go back to top.</a></p>
+  <h3 id="C4">Applicable Law</h3>
+  <p>The law applicable to the interpretation and construction of these Terms of Use and any transaction (including purchases made on this Site) using or related to the Site, shall be the Federal Arbitration Act, applicable federal laws and the laws of the State of Washington, USA, without regard to principles of conflict of laws, but subject to the Federal Arbitration Act and other federal law relating to the arbitrability of claims. You agree that all matters relating to your access to or use of the Site, including all disputes, will be governed by the laws of the United States and by the laws of the State of Washington.<br><a href="#top">Go back to top.</a></p>
+  <h3 id="C5">Denial of Access</h3>
+  <p>These Terms of Use constitute an agreement that is effective unless and until terminated by Gold For Cold. If in Gold For Cold's sole discretion you fail to comply with any term or provision of this agreement, Gold For Cold may deny you access to the Site. In the event of denial of access by Gold For Cold, you are no longer authorized to access the Site, and the restrictions imposed upon you with respect to material copied or downloaded, and the disclaimers and limitations of liabilities set forth in these Terms of Use, shall continue in force. These Terms of Use constitute the entire agreement between you and Gold For Cold relating to the subject matter addressed herein.<br><a href="#top">Go back to top.</a></p>
+  <h3 id="C6">Site Policies, Modification and Severability</h3>
+  <p>Please review our other policies posted on this Site. These policies also govern your use of Gold For Cold services and products. We reserve the right to make changes to our site, policies and these Terms of Use at any time and will provide notice of such changes if or as required by law. If any of these conditions shall be deemed invalid, void or for any reason unenforceable, that condition shall be deemed severable and shall not affect the validity and enforceability of any remaining condition.<br><a href="#top">Go back to top.</a></p> <br><br><br>
+
+  <p>Effective Date 03/25/2020</p>
+</div>
+
+<footer class="footer-distributed">
+ 
+  <div class="footer-left">
+      <img src="resources/Gold_for_Code.jpg">
+    <h3>With US<br><span>Coding is to be simple</span></h3>
+
+    <p class="footer-links">
+      <a href="index.html">Home</a>
+      |
+      <a href="product.html">Products</a>
+      |
+      <a href="about.html">About</a>
+      |
+      <a href="faq.html">FAQ</a>
+    </p>
+
+    <p class="footer-company-name">©2020CopyRight | Gold For Code. Ltd.</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+        <p><span>796 State Dr,
+         San Francisco</span>
+         CA 94132</p>
     </div>
-    <div class="col-sm-4 text-left"> 
-      <h3>Sign In</h3>
-      <p>New to Gold For Code?  <a href="./register.html" class="account"> Create an account.</a></p>
-      
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+01 123-456-7789</p>
     </div>
-    <div class="col-sm-4 text-left"> 
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@goldforcode.com">support@goldforcode.com</a></p>
+    </div>
+    <br>
+    <div class="footer-icons">
+      <p style="text-indent: 1em;">Connect with us on social medias!</p><br>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-google"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
     </div>
   </div>
-</div>
--->
-
-<table id = "navbar" width="100%" bgcolor="#f5f5dc">
-  <tr>
-      <td><a href="index.html">Home</a></td>
-      <td><a href="product.html">Products</a></td>
-      <td><a href="about.html">About</a></td>
-      <td><a href="faq.html">FAQ</a></td>
-      <td colspan="3">&nbsp;</td>
-      <td align="right"><a href="./sign_in.html">Sign In</a></td>
-      <td align="right"><a>Cart</a></td>
-  </tr>
-</table>
-
-<h2 id="top"><center>Terms & Conditions</center></h2>
-<p>Please review the following terms and conditions ("Terms of Use") that govern your use and purchase of products (collectively, "Use") of our Site. Your Use of our Site constitutes your agreement to follow and be bound by the Terms of Use.</p>
-<p>THESE TERMS OF USE INCLUDE A CLASS ACTION WAIVER AND REQUIRE BINDING ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES. DETAILS ARE SET FORTH BELOW.</p>
-<p><a href="#C1">Site Contents</a></p> 
-<p><a href="#C2">Disclaimer, Limitation of Liability and Indemnity</a></p> 
-<p><a href="#C3">Disputes</a></p> 
-<p><a href="#C4">Applicable Law</a></p> 
-<p><a href="#C5">Denial of Access</a></p> 
-<p><a href="#C6">Site Policies, Modification and Severability</a></p> 
-
-<h3 id="C1">Site Contents</h3>
-<p>Unless otherwise noted, the design of the Site, the Site as a whole and all materials that are part of the Site (collectively, "Contents") are copyrights, trademarks, trade dress or other intellectual properties owned, controlled or licensed by Gold For Code. Any use of the Contents without Gold For Code's express written consent is strictly prohibited.<br><a href="#top">Go back to top.</a></p> 
-
-<h3 id="C2">Disclaimer, Limitation of Liability and Indemnity</h3>
-<p>EXCEPT AS OTHERWISE EXPRESSLY PROVIDED, THIS SITE, ALL CONTENTS AND ALL PRODUCTS AND SERVICES ARE PROVIDED ON AN "AS IS" BASIS. Gold For Cold DISCLAIMS ALL WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Gold For Cold DOES NOT WARRANT THAT YOUR USE OF THIS SITE WILL BE UNINTERRUPTED OR ERROR FREE, OR THAT THIS SITE OR ITS SERVER ARE FREE OF VIRUSES OR OTHER HARMFUL ELEMENTS. ALTHOUGH Gold For Cold ENDEAVORS TO PROVIDE ACCURATE INFORMATION, IT DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE ACCURACY OR RELIABILITY OF INFORMATION ON THIS SITE. YOUR USE OF THE SITE IS AT YOUR OWN RISK. NEITHER Gold For Cold NOR ITS AFFILIATED OR RELATED ENTITIES OR ITS VENDORS OR CONTENT PROVIDERS SHALL BE LIABLE TO ANY PERSON OR ENTITY FOR ANY DIRECT OR INDIRECT LOSS, DAMAGE (WHETHER ACTUAL, CONSEQUENTIAL, PUNITIVE, SPECIAL OR OTHERWISE), INJURY, CLAIM, OR LIABILITY OF ANY KIND OR CHARACTER WHATSOEVER BASED UPON OR RESULTING FROM YOUR USE OR INABILITY TO USE THIS SITE, OR ANY INFORMATION OR MATERIALS PROVIDED ON THE SITE. Gold For Cold IS NOT LIABLE FOR ANY DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF ANY USER. IF YOU ARE DISSATISFIED WITH THE SITE OR ANY MATERIALS ON THE SITE, OR WITH ANY OF Gold For Cold'S TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE SITE. YOU AGREE TO INDEMNIFY, DEFEND AND HOLD HARMLESS Gold For Cold, ITS SHAREHOLDERS, OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, DISTRIBUTORS, VENDORS AND AFFILIATES FROM AND AGAINST ANY AND ALL THIRD-PARTY CLAIMS, DEMANDS, LIABILITIES, COSTS OR EXPENSES, INCLUDING REASONABLE ATTORNEYS' FEES, RESULTING OR ARISING OUT OF YOUR BREACH OF ANY OF THESE TERMS OF USE. CERTAIN PROVISIONS OF THE FOREGOING PARAGRAPH MAY NOT APPLY TO CONSUMERS WITHIN THE STATE OF NEW JERSEY OR IN OTHER JURISDICTIONS WHERE PROHIBITED BY LAW. <br><a href="#top">Go back to top.</a></p>
-<h3 id="C3">Disputes</h3>
-<p>We each agree to bring any dispute in arbitration on an individual basis only, and not on a class, consolidated, representative or collective action basis. If for any reason a claim proceeds in court rather than in arbitration, we each waive any right to a jury trial or to participate in a class action against the other. In addition, we both agree that we each may bring suit in court to enjoin infringement or other misuse of intellectual property rights.
-
-  THIS SECTION LIMITS CERTAIN RIGHTS, INCLUDING THE RIGHT TO MAINTAIN A COURT ACTION, THE RIGHT TO A JURY TRIAL, THE RIGHT TO PARTICIPATE IN ANY FORM OF CLASS OR REPRESENTATIVE CLAIM, THE RIGHT TO ENGAGE IN DISCOVERY EXCEPT AS PROVIDED IN AAA OR JAMS RULES, AND THE RIGHT TO CERTAIN REMEDIES AND FORMS OF RELIEF. OTHER RIGHTS THAT YOU OR Gold For Cold WOULD HAVE IN COURT ALSO MAY NOT BE AVAILABLE IN ARBITRATION. <br><a href="#top">Go back to top.</a></p>
-<h3 id="C4">Applicable Law</h3>
-<p>The law applicable to the interpretation and construction of these Terms of Use and any transaction (including purchases made on this Site) using or related to the Site, shall be the Federal Arbitration Act, applicable federal laws and the laws of the State of Washington, USA, without regard to principles of conflict of laws, but subject to the Federal Arbitration Act and other federal law relating to the arbitrability of claims. You agree that all matters relating to your access to or use of the Site, including all disputes, will be governed by the laws of the United States and by the laws of the State of Washington.<br><a href="#top">Go back to top.</a></p>
-<h3 id="C5">Denial of Access</h3>
-<p>These Terms of Use constitute an agreement that is effective unless and until terminated by Gold For Cold. If in Gold For Cold's sole discretion you fail to comply with any term or provision of this agreement, Gold For Cold may deny you access to the Site. In the event of denial of access by Gold For Cold, you are no longer authorized to access the Site, and the restrictions imposed upon you with respect to material copied or downloaded, and the disclaimers and limitations of liabilities set forth in these Terms of Use, shall continue in force. These Terms of Use constitute the entire agreement between you and Gold For Cold relating to the subject matter addressed herein.<br><a href="#top">Go back to top.</a></p>
-<h3 id="C6">Site Policies, Modification and Severability</h3>
-<p>Please review our other policies posted on this Site. These policies also govern your use of Gold For Cold services and products. We reserve the right to make changes to our site, policies and these Terms of Use at any time and will provide notice of such changes if or as required by law. If any of these conditions shall be deemed invalid, void or for any reason unenforceable, that condition shall be deemed severable and shall not affect the validity and enforceability of any remaining condition.<br><a href="#top">Go back to top.</a></p>
-
-<p>Effective Date 03/25/2020</p>
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<footer>
-  <table width="100%" bgcolor="#f5f5dc">
-    <tr align="left">
-      <th>Customer Service</th>
-      <th>About US</th>
-      <th>Help & FAQs</th>
-    </tr>
-    <tr>
-      <td><a href="contact_us.html">Contact Us</a></td>
-      <td><a href="about.html">About Gold For Code</a></td>
-      <td><a href="faq.html">FAQ</a></td>
-    </tr>
-    <tr>
-      <td><a href="#">Careers</a></td>
-      <td><a href="#">Weekly News</a></td>
-      <td><a href="#">Online Chat</a></td>
-    </tr>
-    <tr>
-      <td><a href="#">Affiliates</a></td>
-      <td><a href="#">Awards </a></td>
-      <td><a href="#">Give Us Feedback</a></td>
-    </tr>
-    <tr>
-      <td><a href="#">Global Sites</a></td>
-      <td><a href="#">Social Impact </a></td>
-      <td><a href="#">Accessibility</a></td>
-    </tr>
-  </table>
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>We are here to help</span>
+      With us, CODE IS TO BE SIMPLE. We help the upcoming programmers with the code. We focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+    <p class="footer-links2">
+      <a href="faq.html" style="text-indent: 6em;">FAQs</a>
+      |
+      <a href="contact_us.html">Contact US</a>
+      <br>
+      <a href="terms_and_conditions.html">Terms and Conditions</a>
+      |
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </div>
 </footer>
 </body>
 </html>
+
+

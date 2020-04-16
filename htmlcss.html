@@ -4,75 +4,117 @@
     <title>HTML and CSS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <table id = "navbar" width="100%" bgcolor="#f5f5dc">
-        <tr>
-            <td><a href="index.html">Home</a></td>
-            <td><a href="productspage.html">Products</a></td>
-            <td><a href="about.html">About</a></td>
-            <td><a href="faq.html">FAQ</a></td>
-            <td colspan="3">&nbsp;</td>
-            <td align="right"><a href="sign_in.html">Sign In</a></td>
-            <td align="right"><a>Cart</a></td>
-        </tr>
-    </table>
-    <br><br><br>
+    <link rel="stylesheet" type="text/css" href="resources/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--header  please copy to your page-->
+    <div class="header">
+        <img id="GFC" src="resources/Gold_for_Code.jpg" alt="Gold For Code">
+    </div>
+
+    <!--please pay attention to the "active" page when you copy navbar to your page-->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" href="productspage.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+
+        <div class="navbar-right">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fa fa-fw fa-user"></i> Sign In <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="sign_in.html">Sign In</a>
+                    <a href="register.html">Sign Up</a>
+                    <a href="account.html">Account</a>
+                </div>
+            </div>
+            <a href="Cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+        </div>
+    </nav>
 </head>
 <body>
-<table id ="sidebar" width = "100" bgcolor="#f5f5dc"  align = left>
-    <!-- Control buttons -->
-    <div id="sidebar links">
-        <tr><th> Categories </th></tr>
-        <tr><td><a href="cpp.html"> C++</a></td></tr>
-        <tr><td><a href="javascript.html"> Javascript</a></td></tr>
-        <tr><td><a href="html.html"> HTML</a></td></tr>
-        <tr><td><a href="htmlcss.html"> HTML + CSS</a></td></tr>
-        <tr><td><a href="python.html"> Python</a></td></tr>
+]
+    <div class="sidebar">
+        <h3 align = "center"> Categories </h3>
+        <a href="cpp.html"> C++ </a>
+        <a href="javascript.html"> Javascript </a>
+        <a href="html.html"> HTML </a>
+        <a class = "active" href="htmlcss.html"> HTML + CSS </a>
+        <a href="python.html"> Python </a>
     </div>
-</table>
-<table id = product-table border ="1" align ="center">
-<<tr>
-    <td>
-        <!--left portion of product display, just the image-->
-        <div class = "image of product4">
-            <img src ="resources/htmlcssslideshow.png" width = "200" height="200"></div></td>
-    <td>
-        <!--right portion of product display, details on the product-->
-        <div class = "product info" align = "center">
-            <font size = "6"> Slideshow </font><br>
-            <font size = "4"  color = red> $20.00 </font><br>
-            <font size = "4" color = black> Create a slideshow using HTML and CSS. </font><br>
-            <button> <a href="#" class="cart"> Add to cart </a></button><br></div></td>
-</tr>
-</table>
+
+    <h1 align = "center"> Products in HTML + CSS</h1>
+<div class="grid-container">
+<div class = "product4">
+    <div class = "image of product4">
+        <a href = "individualProducts/htmlCSSslideshow.html">
+            <img src ="resources/htmlcssslideshow.png" width = "200" height="200"></a></div>
+        <a href = "individualProducts/htmlCSSslideshow.html">Slideshow </a>
+
+</div>
+</div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<footer>
-    <table width="100%" bgcolor="#f5f5dc">
-        <tr align="left">
-            <th>Customer Service</th>
-            <th>About US</th>
-            <th>Help & FAQs</th>
-        </tr>
-        <tr>
-            <td><a href="contact_us.html">Contact Us</a></td>
-            <td><a href="about.html">About Gold For Code</a></td>
-            <td><a href="faq.html">FAQ</a></td>
-        </tr>
-        <tr>
-            <td><a href="#">Careers</a></td>
-            <td><a href="#">Weekly News</a></td>
-            <td><a href="#">Online Chat</a></td>
-        </tr>
-        <tr>
-            <td><a href="#">Affiliates</a></td>
-            <td><a href="#">Awards </a></td>
-            <td><a href="#">Give Us Feedback</a></td>
-        </tr>
-        <tr>
-            <td><a href="#">Global Sites</a></td>
-            <td><a href="#">Social Impact </a></td>
-            <td><a href="#">Accessibility</a></td>
-        </tr>
-    </table>
+<!--Please copy the footer into your page.-->
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <img src="resources/Gold_for_Code.jpg">
+        <h3>With US<br><span>Coding is to be simple</span></h3>
+
+        <p class="footer-links">
+            <a href="index.html">Home</a>
+            |
+            <a href="product.html">Products</a>
+            |
+            <a href="about.html">About</a>
+            |
+            <a href="faq.html">FAQ</a>
+        </p>
+
+        <p class="footer-company-name">©2020CopyRight | Gold For Code. Ltd.</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>796 State Dr,
+         San Francisco</span>
+                CA 94132</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+01 123-456-7789</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@goldforcode.com">support@goldforcode.com</a></p>
+        </div>
+        <br>
+        <div class="footer-icons">
+            <p style="text-indent: 1em;">Connect with us on social medias!</p><br>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>We are here to help</span>
+            With us, CODE IS TO BE SIMPLE. We help the upcoming programmers with the code. We focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        <p class="footer-links2">
+            <a href="faq.html" style="text-indent: 6em;">FAQs</a>
+            |
+            <a href="contact_us.html">Contact US</a>
+            <br>
+            <a href="terms_and_conditions.html">Terms and Conditions</a>
+            |
+            <a href="privacy.html">Privacy Policy</a>
+        </p>
+    </div>
 </footer>
 
 </body>

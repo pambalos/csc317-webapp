@@ -26,6 +26,7 @@
   <a href="productspage.html">Products</a>
   <a href="about.html">About</a>
   <a href="faq.html">FAQ</a>
+  <a class="active" href="contact_us.html">Contact US</a>
 
   <div class="navbar-right">
       <div class="dropdown">
@@ -42,85 +43,43 @@
   </div>
 </nav>
 
-<div class="form-container" style="background-image: url(resources/form_background2.jpg)">
-  <form class="form">
-    <h2><b>Contact US</b></h2>
-    <p style="font-size: 0.8em;"><font color="red">*</font>Required</p>
-    <label for="fname"><b>First Name <font color="red">*</font></b></label><br>
-    <input type="text" placeholder="Enter first name" name="fname" maxlength="30" size="30" required/><br><br>
-        
-    <label for="lname"><b>Last Name<font color="red">*</font></b></label><br>
-    <input type="text" placeholder="Enter last name" name="lname" maxlength="30" size="30" required/><br><br>
+<div class="contact_row">
+  <div class="col">
+    <div class="left" style="background-image: url(resources/form_background2.jpg);">
+      <div class="words">
+        <h2 style="font-family: cursive;"> Gold For Code</h2>
+        <p> <i class="fa fa-map-marker"></i>&nbsp; &nbsp;&nbsp;796 State Dr,  </p> 
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Francisco CA 94132</p>
+        <p ><i class="fa fa-envelope"></i>
+            <a style="color: whitesmoke;" href="mailto:support@goldforcode.com">
+              &nbsp;support@goldforcode.com</a></p>
+        <p><i class="fa fa-phone"></i>&nbsp;&nbsp;+01 123-456-7789</p>
+      </div>
+    </div>
+  </div>
 
-    <label for="email"><b>Email<font color="red">*</font></b></label><br>
-    <input type="text" placeholder="Enter Email" name="email" maxlength="30" size="30" required/><br><br>
-
-    <label for="message"><b>Message</b></label><br>
-    <textarea name="content" rows="5" cols="20"> </textarea><br><br>
-    <button type="submit" class="form-button">Submit</button>
-  </form>
+  <div class="col">
+    <form class="form">
+      <h1>Hit Us Up</h1>
+      <p style="font-size: 0.8em;"><font color="red">*</font>All fields are Required</p>
+      <input type="text" placeholder="First Name"  name="fname" maxlength="30" size="30" required/><br>
+      <input type="text" placeholder="Last Name" name="lname" maxlength="30" size="30" required/><br>
+      <input type="text" placeholder="Email" name="email" maxlength="30" size="30" required/><br><br><br><br>
+      <input type="text" placeholder="Message" name="message" maxlength="30" size="30" required/><br><br><br><br>
+      <button type="submit" class="form-button">Submit</button>
+    </form>
+  </div>
 </div>
 
+<div id="start_project">
+    <h1>Start your project with us!</h1>
+</div>
 
-<footer class="footer-distributed">
- 
-  <div class="footer-left">
-      <img src="resources/Gold_for_Code.jpg">
-    <h3>With US<br><span>Coding is to be simple</span></h3>
-
-    <p class="footer-links">
-      <a href="index.html">Home</a>
-      |
-      <a href="product.html">Products</a>
-      |
-      <a href="about.html">About</a>
-      |
-      <a href="faq.html">FAQ</a>
-    </p>
-
-    <p class="footer-company-name">©2020CopyRight | Gold For Code. Ltd.</p>
-  </div>
-
-  <div class="footer-center">
-    <div>
-      <i class="fa fa-map-marker"></i>
-        <p><span>796 State Dr,
-         San Francisco</span>
-         CA 94132</p>
-    </div>
-
-    <div>
-      <i class="fa fa-phone"></i>
-      <p>+01 123-456-7789</p>
-    </div>
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="mailto:support@goldforcode.com">support@goldforcode.com</a></p>
-    </div>
-    <br>
-    <div class="footer-icons">
-      <p style="text-indent: 1em;">Connect with us on social medias!</p><br>
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-google"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-    </div>
-  </div>
-  <div class="footer-right">
-    <p class="footer-company-about">
-      <span>We are here to help</span>
-      With us, CODE IS TO BE SIMPLE. We help the upcoming programmers with the code. We focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-    <p class="footer-links2">
-      <a href="faq.html" style="text-indent: 6em;">FAQs</a>
-      |
-      <a href="contact_us.html">Contact US</a>
-      <br>
-      <a href="terms_and_conditions.html">Terms and Conditions</a>
-      |
-      <a href="privacy.html">Privacy Policy</a>
-    </p>
-  </div>
-</footer>
+<div id="map"></div>
 </body>
+<script src="resources/map.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpU8L39FDXPnzG2hlX_uVVfOe9yDlyGT4&callback=initMap">
+    </script>
 </html>
 

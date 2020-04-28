@@ -11,6 +11,7 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="resources/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!--header  please copy to your page-->
     <div class="header">
         <img id="GFC" src="resources/Gold_for_Code.jpg" alt="Gold For Code">
@@ -22,6 +23,7 @@ and open the template in the editor.
         <a class = "active" href="productspage.html">Products</a>
         <a href="about.html">About</a>
         <a href="faq.html">FAQ</a>
+        <a href="contact_us.html">Contact US</a>
 
         <div class="navbar-right">
             <div class="dropdown">
@@ -41,123 +43,67 @@ and open the template in the editor.
 </head>
 <body>
 
-<div class="sidebar">
-    <h3 align = "center"> Categories </h3>
-    <a href="cpp.html"> C++ </a>
-    <a href="javascript.html"> Javascript </a>
-    <a href="html.html"> HTML </a>
-    <a href="htmlcss.html"> HTML + CSS </a>
-    <a href="python.html"> Python </a>
+<!--sideNavBar-->
+<div id="mySideNav" class="sidebar" style="height: 100%;">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="individualProducts/cpp.html"> C++ </a>
+    <a href="individualProducts/javascript.html"> Javascript </a>
+    <a href="individualProducts/html.html"> HTML </a>
+    <a href="individualProducts/ruby.html"> Ruby </a>
+    <a href="individualProducts/python.html"> Python </a>
 </div>
 
-<h1 align = "center" style="text-align: center;
-font-family: cursive;
-text-shadow: 1px 1px 10px #f9f9f9; "> Products</h1>
+<div id="main" class="mainPage">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Categories</span>
+    <h1> Products</h1>
 
-<!-- start of the grid that holds the products -->
-<div class = "grid-container">
-    <div class = "product1">
-        <div class = "image of product1">
-            <a href = "individualProducts/htmlGeolocation.html">
-                <img src ="resources/htmlgeolocation.png" width = "200" height= "200"></a></div>
-            <a href = "individualProducts/htmlGeolocation.html">Geolocation</a><br>
+    <div class="row">
+        <div class="col">
+            <a href="individualProducts/product1.html"><img src="resources/product1.jpg" alt="product 1" style="width:100%"></a>
+            <h3><a href="individualProducts/product1.html">I heart U</a></h3>
+
+            <a href="individualProducts/product2.html"><img src="resources/product2.jpg" alt="product 2" style="width:100%"></a>
+            <h3><a href="individualProducts/product2.html">Geolocation</a></h3>
+
+            <a href="individualProducts/product3.html"><img src="resources/product3.jpg" alt="product 3" style="width:100%"></a>
+            <h3><a href="individualProducts/product3.html">javaLengthConverter</a></h3>
+
+            <a href="individualProducts/product4.html"><img src="resources/product4.jpg" alt="product 4" style="width:100%"></a>
+            <h3><a href="individualProducts/product4.html">Slides Show</a></h3>
+
+            <a href="individualProducts/product5.html"><img src="resources/product5.jpg" alt="product 5" style="width:100%"></a>
+            <h3><a href="individualProducts/product5.html">Responsive Image Gallery</a></h3>
+
+            <a href="individualProducts/product6.html"><img src="resources/product6.jpg" alt="product 6" style="width:100%"></a>
+            <h3><a href="individualProducts/product6.html">Check palindrome</a></h3>
+        </div>
+
+        <div class="col">
+            <a href="individualProducts/product7.html"><img src="resources/product7.jpg" alt="product 7" style="width:100%"></a>
+            <h3><a href="individualProducts/product7.html">Hack professor's computer</a></h3>
+
+            <a href="individualProducts/product8.html"><img src="resources/product8.jpg" alt="product 8" style="width:100%"></a>
+            <h3><a href="individualProducts/product8.html">AAA for everybody</a></h3>
+
+            <a href="individualProducts/product9.html"><img src="resources/product9.jpg" alt="product 9" style="width:100%"></a>
+            <h3><a href="individualProducts/product9.html">Goolge Guava</a></h3>
+
+            <a href="individualProducts/product10.html"><img src="resources/product10.jpg" alt="product 10" style="width:100%"></a>
+            <h3><a href="individualProducts/product10.html">Hello World</a></h3>
+
+            <a href="individualProducts/product11.html"><img src="resources/product11.jpg" alt="product 11" style="width:100%"></a>
+            <h3><a href="individualProducts/product11.html">Stack</a></h3>
+
+            <a href="individualProducts/product12.html"><img src="resources/product12.jpg" alt="product 12" style="width:100%"></a>
+            <h3><a href="individualProducts/product12.html">Transform the world</a></h3>
+        </div>
     </div>
-
-    <div class = "product2">
-        <div class = "image of product2">
-            <a href = "individualProducts/htmlHeader.html">
-                <img src ="resources/htmlheader.png" width = "200" height="200"></a></div>
-            <a href = "individualProducts/htmlHeader.html">Header </a>
-    </div>
-
-    <div class = "product3">
-        <div class = "image of product3">
-            <a href = "individualProducts/htmlFooter.html">
-                <img src ="resources/htmlfooter.png" width = "200" height="200"></a></div>
-            <a href = "individualProducts/htmlFooter.html">Footer</a>
-    </div>
-    <div class = "product4">
-        <div class = "image of product4">
-            <a href = "individualProducts/htmlCSSslideshow.html">
-                <img src ="resources/htmlcssslideshow.png" width = "200" height="200"></a></div>
-
-            <a href = "individualProducts/htmlCSSslideshow.html">Slideshow</a>
-
-
-    </div>
-    <div class = "product5">
-        <div class = "image of product5">
-            <a href = "individualProducts/javaFormValidation.html">
-                <img src ="resources/javaformvalidation.png" width = "200" height="200"></a></div>
-            <a href = "individualProducts/javaFormValidation.html">Validation</a>
-
-
-    </div>
-    <div class = "product6">
-        <div class = "image of product6">
-            <a href = "individualProducts/javaLengthConverter.html">
-                <img src ="resources/javalengthconverter.png" width = "200" height="200"></a></div>
-            <a href = "individualProducts/javaLengthConverter.html">Length Converter</a>
-
-
-    </div>
-    <div class = "product7">
-        <div class = "image of product7">
-            <a href = "individualProducts/javaSlider.html">
-                <img src ="resources/javaslider.png" width = "200" height="200"></a></div>
-            <a href = "individualProducts/javaSlider.html">Sliders</a>
-
-
-    </div>
-    <div class = "product8">
-        <div class = "image of product8">
-            <a href = "individualProducts/cppEncapsulation.html">
-                <img src ="resources/cppencapsulation.png" width = "200" height="200"></a></div>
-            <a href = "individualProducts/cppEncapsulation.html">Encapsulation</a>
-
-
-    </div>
-    <div class = "product9">
-        <div class = "image of product9">
-            <a href = "individualProducts/cppConstructor.html">
-                <img src ="resources/cppconstructor.png" width = "200" height="200"></a></div>
-            <a href = "individualProducts/cppConstructor.html">Constructors</a>
-
-    </div>
-
-    <div class = "product10">
-        <div class = "image of product10">
-            <a href = "individualProducts/pythonLists.html">
-                <img src ="resources/pythonlists.png" width = "200" height="200"></a></div>
-            <a href = "individualProducts/pythonLists.html">Lists</a>
-
-
-    </div>
-
-    <div class = "product11">
-        <div class = "image of product11">
-            <a href = "individualProducts/pythonDictionary.html">
-                <img src ="resources/pythondictionary.png" width = "200" height="200"></a></div>
-            <a href = "individualProducts/pythonDictionary.html">Dictionary</a>
-
-    </div>
-
-    <div class = "product12">
-        <div class = "image of product12">
-            <a href = "individualProducts/pythonRandom.html">
-                <img src ="resources/pythonrandom.png" width = "200" height="200"></a></div>
-            <a href = "individualProducts/pythonRandom.html">Random Module</a>
-    </div>
-
-
-
-
 </div>
 
 
 <!--Please copy the footer into your page.-->
 
-<footer class="footer-distributed">
+<footer class="footer-distributed" style="z-index: 2;">
 
     <div class="footer-left">
         <img src="resources/Gold_for_Code.jpg">
@@ -216,6 +162,8 @@ text-shadow: 1px 1px 10px #f9f9f9; "> Products</h1>
         </p>
     </div>
 </footer>
+<script src="resources/sidenavbar.js"></script>
 </body>
 </html>
+
 

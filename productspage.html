@@ -11,7 +11,9 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="resources/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <script src="resources/sidenavbar.js"></script>
+    <script src="resources/js/previewCode.js"></script>
+
     <!--header  please copy to your page-->
     <div class="header">
         <img id="GFC" src="resources/Gold_for_Code.jpg" alt="Gold For Code">
@@ -57,45 +59,187 @@ and open the template in the editor.
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Categories</span>
     <h1> Products</h1>
 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class = "modal-banner">
+                <span class="close" onclick="dismissModal()">&times;</span>
+            </div>
+            <p class ="modal-text">Some text in the Modal..</p>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col">
-            <a href="individualProducts/product1.html"><img src="resources/product1.jpg" alt="product 1" style="width:100%"></a>
-            <h3><a href="individualProducts/product1.html">I heart U</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product1.html"><img src="resources/product1.jpg" alt="product 1" style="width:100%" class="p-image"></a>
+                <div>
+                    <h3>
+                        <a href="individualProducts/product1.html">I heart U</a>
+                        <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                    </h3>
+                </div>
 
-            <a href="individualProducts/product2.html"><img src="resources/product2.jpg" alt="product 2" style="width:100%"></a>
-            <h3><a href="individualProducts/product2.html">Geolocation</a></h3>
+                <div class="preview-box">
+                    <div id="p1c" class ="preview">
+                        Let your crush, and the world, know how much you love them with this script, which will send
+                        emails to everyone in the world detailing your love.
+                    </div>
+                </div>
+            </div>
 
-            <a href="individualProducts/product3.html"><img src="resources/product3.jpg" alt="product 3" style="width:100%"></a>
-            <h3><a href="individualProducts/product3.html">javaLengthConverter</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product2.html"><img src="resources/product2.jpg" alt="product 2" style="width:100%" class="p-image"></a>
+                <h3>
+                    <a href="individualProducts/product2.html">Geolocation</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p2c" class ="preview">
+                        Have you ever wanted to broadcast your geolocation to all of
+                        the shady government agencies in the world?
+                    </div>
+                </div>
+            </div>
 
-            <a href="individualProducts/product4.html"><img src="resources/product4.jpg" alt="product 4" style="width:100%"></a>
-            <h3><a href="individualProducts/product4.html">Slides Show</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product3.html"><img src="resources/product3.jpg" alt="product 3" style="width:100%" class="p-image"></a>
+                <h3>
+                    <a href="individualProducts/product3.html">javaLengthConverter</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p3c" class ="preview">
+                        Just a boring old length converter in Java that helps you shrink people from X feet to X inches.
+                    </div>
+                </div>
+            </div>
 
-            <a href="individualProducts/product5.html"><img src="resources/product5.jpg" alt="product 5" style="width:100%"></a>
-            <h3><a href="individualProducts/product5.html">Responsive Image Gallery</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product4.html"><img class="p-image" src="resources/product4.jpg" alt="product 4" style="width:100%"></a>
+                <h3>
+                    <a href="individualProducts/product4.html">Slides Show</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p4c" class ="preview">
+                        A very cool piece of javascript that will put slide shows into your page!
+                        What more could you ever want in the world? NOTHING I TELL YOU. NOTHING.
+                    </div>
+                </div>
+            </div>
 
-            <a href="individualProducts/product6.html"><img src="resources/product6.jpg" alt="product 6" style="width:100%"></a>
-            <h3><a href="individualProducts/product6.html">Check palindrome</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product5.html"><img class="p-image" src="resources/product5.jpg" alt="product 5" style="width:100%"></a>
+                <h3>
+                    <a href="individualProducts/product5.html">Responsive Image Gallery</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p5c" class ="preview">
+                        A fancy piece of Javascript which will make your image gallery response to haptic feedback! Thats right!
+                        With this code, you will be able to make your website respond to vibrations! (How will users send vibration to
+                        your website? Well... we haven't figured that part out yet...
+                    </div>
+                </div>
+            </div>
+
+            <div class="hover-container">
+                <a href="individualProducts/product6.html"><img class="p-image" src="resources/product6.jpg" alt="product 6" style="width:100%"></a>
+                <h3>
+                    <a href="individualProducts/product6.html">Check palindrome</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p6c" class ="preview">
+                        Check a word to see if a palindrome exists in it! What is a palindrome? WHO KNOWS!? This will figure it out for you!
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="col">
-            <a href="individualProducts/product7.html"><img src="resources/product7.jpg" alt="product 7" style="width:100%"></a>
-            <h3><a href="individualProducts/product7.html">Hack professor's computer</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product7.html"><img class="p-image" src="resources/product7.jpg" alt="product 7" style="width:100%"></a>
+                <h3>
+                    <a href="individualProducts/product7.html">Hack professor's computer</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p7c" class ="preview">
+                        Hack your professor's computer with this nifty little script! Not only will it give you full access to your professor's
+                        computer, it'll also tell him!
+                    </div>
+                </div>
+            </div>
 
-            <a href="individualProducts/product8.html"><img src="resources/product8.jpg" alt="product 8" style="width:100%"></a>
-            <h3><a href="individualProducts/product8.html">AAA for everybody</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product8.html"><img class="p-image" src="resources/product8.jpg" alt="product 8" style="width:100%"></a>
+                <h3>
+                    <a href="individualProducts/product8.html">AAA for everybody</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p8c" class ="preview">
+                        Upload this executable to a flash drive, then plug it in to a school computer to have it automatically
+                        hack the local network and turn every assignment into A's.
+                    </div>
+                </div>
+            </div>
 
-            <a href="individualProducts/product9.html"><img src="resources/product9.jpg" alt="product 9" style="width:100%"></a>
-            <h3><a href="individualProducts/product9.html">Goolge Guava</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product9.html"><img class="p-image" src="resources/product9.jpg" alt="product 9" style="width:100%"></a>
+                <h3>
+                    <a href="individualProducts/product9.html">Google Guava</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p9c" class ="preview">
+                        This is a nifty little piece of Google code that will turn your cat into a delicious piece of guava fruit.
+                    </div>
+                </div>
+            </div>
 
-            <a href="individualProducts/product10.html"><img src="resources/product10.jpg" alt="product 10" style="width:100%"></a>
-            <h3><a href="individualProducts/product10.html">Hello World</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product10.html"><img class="p-image" src="resources/product10.jpg" alt="product 10" style="width:100%"></a>
+                <h3>
+                    <a href="individualProducts/product10.html">Hello World</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p10c" class ="preview">
+                        Hearkening back to baby 'Hello World' starter projects, this script is aptly named. If you run it on
+                        any machine, it will revert all hardware, software, and memory settings back to its factory default state.
+                    </div>
+                </div>
+            </div>
 
-            <a href="individualProducts/product11.html"><img src="resources/product11.jpg" alt="product 11" style="width:100%"></a>
-            <h3><a href="individualProducts/product11.html">Stack</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product11.html"><img class="p-image" src="resources/product11.jpg" alt="product 11" style="width:100%"></a>
+                <h3>
+                    <a href="individualProducts/product11.html">Stack</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p11c" class ="preview">
+                        This piece of code is an extensive Python and Linux library that teaches you to implement
+                        an integer in assembly code through a variety of interactive videos. Incredible eh?
+                    </div>
+                </div>
+            </div>
 
-            <a href="individualProducts/product12.html"><img src="resources/product12.jpg" alt="product 12" style="width:100%"></a>
-            <h3><a href="individualProducts/product12.html">Transform the world</a></h3>
+            <div class="hover-container">
+                <a href="individualProducts/product12.html"><img class="p-image" src="resources/product12.jpg" alt="product 12" style="width:100%"></a>
+                <h3>
+                    <a href="individualProducts/product12.html">Transform the world</a>
+                    <a onclick="downloadFile(this)"><img src="resources/download.png" class="download-button"></a>
+                </h3>
+                <div class="preview-box">
+                    <div id="p12c" class ="preview">
+                        USE WITH CAUTION. Actually transforming the world is an impossible task, obviously, so what this piece of code does
+                        is to transform your eyes to see in black and white only, thus transforming the world.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -162,7 +306,6 @@ and open the template in the editor.
         </p>
     </div>
 </footer>
-<script src="resources/sidenavbar.js"></script>
 </body>
 </html>
 

@@ -199,7 +199,12 @@ function load(){
         } else {}
     }
     console.log(cartThings);
+    output.push("<div class=\"form-container2\">");
+    output.push("<form class=\"form\">");
     output.push("<div >" + "total price is "+ totalPrice +  "</div>" );
+    output.push("<button type=\"button\" class=\"form-button\" id = \"tocheckoutpage\" onclick=\"paynow()\">Checkout</button>");
+    output.push("</form>");
+    output.push("</div>");
     content = output.join(" ");
     if (ct == 0){
         //console.log("here");
@@ -218,3 +223,27 @@ function remove(item){
 }
 
 
+function paynow(){
+    window.location = "checkout.html"; // Redirecting to other page.
+    return false;
+}
+
+function checked(){
+
+    var a = document.getElementById("receiverEmail");
+    var b = document.getElementById("creditCardNum");
+    var c = document.getElementById("CVV");
+    var d = document.getElementById("expDate");
+    var e = document.getElementById("zipCode");
+
+    console.log(a.value);
+    if (a.value == "" || b.value == ""|| c.value == ""|| d.value == ""|| e.value == ""){
+        alert("Please double check you payment and shipping information.");
+        return false;
+    }else{
+
+    alert("Thanks for the donation. Time to report replace your credit card now.");
+    window.location = "./productspage.html"; // Redirecting to other page.
+    return false;
+}
+}

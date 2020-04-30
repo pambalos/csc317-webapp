@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gold For Code</title>
+  <link rel="stylesheet" type="text/css" href="resources/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+
+
+
+<!--   NO BOOTSTRAP FOR THIS ASSIGNMENT
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  -->
+  </head>
+  <script src="total.js"></script>
+<body>
+
+<!--header  please copy to your page-->
+<div class="header">
+  <img id="GFC" src="resources/Gold_for_Code.jpg" alt="Gold For Code">
+</div>
+
+<!--please pay attention to the "active" page when you copy navbar to your page-->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="productspage.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact_us.html">Contact US</a>
+
+  <div class="navbar-right">
+      <div class="dropdown">
+          <button class="dropbtn">
+            <i class="fa fa-fw fa-user"></i> Sign In <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content">
+              <a href="sign_in.html">Sign In</a>
+              <a href="register.html">Sign Up</a>
+              <a onclick = "signout()" href="sign_in.html">Sign Out</a>
+              <a href="account.html">Account</a>
+            </div>
+      </div> 
+      <a class="active" href="Cart.html"><i class="fa fa-shopping-cart"></i> Cart</a> 
+  </div>
+</nav>
+
+
+
+<style>
+    body {
+        padding-top: 70px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+</style>
+
+<body>
+
+    
+
+    <div class="form-container">
+        <form class="form"> 
+          <h2><b>Checkout Now</b></h2>
+          
+          <label for="email"><b>Receiver Email</b></label><br>
+          <input type="text" placeholder="Enter Email" name="email" id="receiverEmail" maxlength="30" size="30" required/><br><br>
+              
+          <label for="psw"><b>Credit Card Number</b></label><br>
+          <input type="number" placeholder="We prefer AMEX charge card" name="psw" id="creditCardNum" maxlength="30" size="30" required/><br><br>
+          
+          <label for="psw"><b>CVV</b></label><br>
+          <input type="password" placeholder="CVV" name="psw" id="CVV" maxlength="30" size="30" required/><br><br>
+
+          <label for="psw"><b>Expiration Date</b></label><br>
+          <input type="date"  name="psw" id="expDate" maxlength="30" size="30" required/><br><br>
+        
+          <label for="psw"><b>Zipcode</b></label><br>
+          <input type="number" placeholder="98765" name="psw" id="zipCode" maxlength="30" size="30" required/><br><br>
+
+          <br>
+          <input type="checkbox" checked="unchecked" name="remember"> Save this for future payment. <br>
+          <p>By clicking checkout button, you agree to our <a href="privacy.html">Privacy Policy</a>and <a href="terms_and_conditions.html">Terms & Conditions.</a></p>
+          <button type="button" class="form-button" id = "submit" onclick="checked()">Checkout</button>
+        </form>
+      </div>
+
+
+
+</body>
+
+</html>

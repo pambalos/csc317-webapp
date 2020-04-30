@@ -748,7 +748,24 @@ input#q9{
 
 }
 
+.form-container2{
+	background-image: url(form_background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	min-height: 150px;
+	color: whitesmoke;
+
+}
+
 .form-container .form{
+	margin: 100px auto;
+	max-width: 320px;
+	padding: 45px;
+	background-color: rgba(0,0,0, 0.75);
+}
+.form-container2 .form{
 	margin: 100px auto;
 	max-width: 320px;
 	padding: 45px;
@@ -756,7 +773,9 @@ input#q9{
 }
 
 .form-container .form input[type=text],
-.form-container .form input[type=password] {
+.form-container .form input[type=password], 
+.form-container .form input[type=number],
+.form-container .form input[type=date]  {
 	width: 100%;
 	padding: 10px 5px 10px 5px;
 	margin: 5px 0px 10px 0;
@@ -770,6 +789,18 @@ input#q9{
 }
 
 .form-container .form .form-button{
+	background-color: #00ccff;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.8;
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: bold;
+}
+.form-container2 .form .form-button{
 	background-color: #00ccff;
 	color: white;
 	padding: 16px 20px;

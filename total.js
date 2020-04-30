@@ -185,12 +185,12 @@ function load(){
             totalPrice += Number(priceChart[key[0]-1]) * Number(key[1]);
             console.log(totalPrice);
             cartThings.push([key[0],key[1]]);
-            output.push("<tr><br>");
+            output.push("<tr>");
 
             output.push("<td> <img src=\"./resources/product"+key[0]+".jpg\" style=\"width:600px;height:400px;>\" </td>");//jpg
-            output.push("<td >" + "item is "+key[0] +  "</td>")//id
-            output.push("<td >" + "unit price is "+ Number(priceChart[key[0]-1]) +  "</td>" );  
-            output.push("<td >" + "count is "+ key[1] +  "</td>" )//name
+            output.push("<td >" + "Item hash key: "+ makeid(8) +  "</td>")//id
+            output.push("<td >" + "Unit Price: "+ Number(priceChart[key[0]-1]) +  "</td>" );  
+            output.push("<td >" + "Amount: "+ key[1] +  "</td>" )//name
             output.push("<td> <button class=\"btn-danger\" type = \"button\" onclick = \"remove(" + key[0]+ ")\"> REMOVE </button> </td>");
 
 
@@ -200,7 +200,7 @@ function load(){
             //later
         } else {}
     }
-    output.push("</table><br>");
+    output.push("</table>");
     console.log(cartThings);
     output.push("<div class=\"form-container2\">");
     output.push("<form class=\"form\">");
@@ -250,3 +250,16 @@ function checked(){
     return false;
 }
 }
+
+
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+ }
+ 
+ console.log(makeid(5));

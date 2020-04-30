@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gold For Code</title>
-    <link rel="stylesheet" type="text/css" href="resources/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--   NO BOOTSTRAP FOR THIS ASSIGNMENT
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gold For Code</title>
+  <link rel="stylesheet" type="text/css" href="resources/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  
+  <!--   NO BOOTSTRAP FOR THIS ASSIGNMENT
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     -->
-  </head>
-  <body>
-  
+</head>
+<script src="total.js"></script>
+<script src="./individualProducts/loadpage.js"></script>
+<script>
+  update();
+  try{
+  if (userpass["in"] == "true") {
+  } else {
+    alert("What are you thinking. Go to Sign in.")
+    window.location = "sign_in.html"; // Redirecting to other page.
+
+  }}catch(err){
+    setCookie("in", false);
+    update();
+  }
+</script>
+
+<body>
+
   <!--header  please copy to your page-->
   <div class="header">
     <img id="GFC" src="resources/Gold_for_Code.jpg" alt="Gold For Code">
   </div>
-  
+
   <!--please pay attention to the "active" page when you copy navbar to your page-->
   <nav class="navbar">
     <a href="index.html">Home</a>
@@ -27,64 +48,30 @@
     <a href="about.html">About</a>
     <a href="faq.html">FAQ</a>
     <a href="contact_us.html">Contact US</a>
-  
+
     <div class="navbar-right">
-        <div class="dropdown">
-            <button class="dropbtn">
-              <i class="fa fa-fw fa-user"></i> Sign In <i class="fa fa-caret-down"></i>
-            </button>
-              <div class="dropdown-content">
-                <a href="sign_in.html">Sign In</a>
-                <a href="register.html">Sign Up</a>
-                <a href="account.html">Account</a>
-              </div>
-        </div> 
-        <a class="active" href="Cart.html"><i class="fa fa-shopping-cart"></i> Cart</a> 
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-fw fa-user"></i> Sign In <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sign_in.html">Sign In</a>
+          <a href="register.html">Sign Up</a>
+          <a onclick = "signout()" href="sign_in.html">Sign Out</a>
+          <a href="account.html">Account</a>
+        </div>
+      </div>
+      <a class="active" href="Cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
     </div>
   </nav>
 
   <!-- referenced from AMZN cart -->
+  <div id="display"></div>
+  <script>load();</script>
 
-  <div class="a-column a-span8 a-span-last">
-    <div class="a-row sc-your-cart-is-empty">
-        <h2>
-            Your cart is empty
-        </h2>
-    </div>
-    
-        
-        
-            
-            <div class="a-row sc-shop-todays-deals-link">
-                <a class="a-link-normal" href="product.html">
-                    Shop today's deals
-                </a>
-            </div>
-        
-    
+  <span style="font-size:30px;cursor:pointer" onclick="load()">&#9776;refresh</span>
 
-    
-        
-        
-            <div class="a-row a-spacing-medium a-spacing-top-medium sc-sign-in">
-                
-                
-                <span class="a-button a-button-primary" id="a-autoid-0"><span class="a-button-inner"><a href="sign_in.html" class="a-button-text" role="button" id="a-autoid-0-announce">
-                    <span class="a-size-base-plus">
-                        Sign in to your account
-                    </span>
-                </a></span></span>
-
-                
-                <span class="a-button a-button-base" id="a-autoid-1"><span class="a-button-inner"><a href="register.html" class="a-button-text" role="button" id="a-autoid-1-announce">
-                    <span class="a-size-base-plus">
-                        Sign up now
-                    </span>
-                </a></span></span>
-            </div>
-        
-    
-</div>
+  </div>
 
 
 
@@ -93,65 +80,69 @@
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<footer class="footer-distributed">
- 
-  <div class="footer-left">
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
       <img src="resources/Gold_for_Code.jpg">
-    <h3>With US<br><span>Coding is to be simple</span></h3>
+      <h3>With US<br><span>Coding is to be simple</span></h3>
 
-    <p class="footer-links">
-      <a href="index.html">Home</a>
-      |
-      <a href="product.html">Products</a>
-      |
-      <a href="about.html">About</a>
-      |
-      <a href="faq.html">FAQ</a>
-    </p>
+      <p class="footer-links">
+        <a href="index.html">Home</a>
+        |
+        <a href="product.html">Products</a>
+        |
+        <a href="about.html">About</a>
+        |
+        <a href="faq.html">FAQ</a>
+      </p>
 
-    <p class="footer-company-name">©2020CopyRight | Gold For Code. Ltd.</p>
-  </div>
+      <p class="footer-company-name">©2020CopyRight | Gold For Code. Ltd.</p>
+    </div>
 
-  <div class="footer-center">
-    <div>
-      <i class="fa fa-map-marker"></i>
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
         <p><span>796 State Dr,
-         San Francisco</span>
-         CA 94132</p>
-    </div>
+            San Francisco</span>
+          CA 94132</p>
+      </div>
 
-    <div>
-      <i class="fa fa-phone"></i>
-      <p>+01 123-456-7789</p>
-    </div>
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="mailto:support@goldforcode.com">support@goldforcode.com</a></p>
-    </div>
-    <br>
-    <div class="footer-icons">
-      <p style="text-indent: 1em;">Connect with us on social medias!</p><br>
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-google"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-    </div>
-  </div>
-  <div class="footer-right">
-    <p class="footer-company-about">
-      <span>We are here to help</span>
-      With us, CODE IS TO BE SIMPLE. We help the upcoming programmers with the code. We focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-    <p class="footer-links2">
-      <a href="faq.html" style="text-indent: 6em;">FAQs</a>
-      |
-      <a href="contact_us.html">Contact US</a>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+01 123-456-7789</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@goldforcode.com">support@goldforcode.com</a></p>
+      </div>
       <br>
-      <a href="terms_and_conditions.html">Terms and Conditions</a>
-      |
-      <a href="privacy.html">Privacy Policy</a>
-    </p>
-  </div>
-</footer>
+      <div class="footer-icons">
+        <p style="text-indent: 1em;">Connect with us on social medias!</p><br>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>We are here to help</span>
+        With us, CODE IS TO BE SIMPLE. We help the upcoming programmers with the code. We focuses on providing the most
+        efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in
+        different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL
+        and Algorithm.</p>
+      <p class="footer-links2">
+        <a href="faq.html" style="text-indent: 6em;">FAQs</a>
+        |
+        <a href="contact_us.html">Contact US</a>
+        <br>
+        <a href="terms_and_conditions.html">Terms and Conditions</a>
+        |
+        <a href="privacy.html">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>

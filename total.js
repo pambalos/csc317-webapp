@@ -173,36 +173,39 @@ function load(){
     var cartThings = [];
     var output = [];
     var totalPrice = 0;
+    output.push("<table style=\"width: 95%\">");
     for (var i = 0; i < multiple.length; i++) {
         var key = multiple[i].split("=");
         //console.log(key[0], key[1]);
         key[0] = Number(key[0].trim());
         //console.log(multiple.length, i, key[0]);
+
         if ( all.includes( key[0] ) ) {
             ct ++;
             totalPrice += Number(priceChart[key[0]-1]) * Number(key[1]);
             console.log(totalPrice);
             cartThings.push([key[0],key[1]]);
-            output.push("<div>");
+            output.push("<tr><br>");
 
-            output.push("<div >" + "item is "+key[0] +  "</div>")//id
-            output.push("<div >" + "count is "+ key[1] +  "</div>" )//name
-            output.push("<img src=\"./resources/product"+key[0]+".jpg\" style=\"width:600px;height:400px;>\"");//jpg
-            output.push("<div >" + "<br>unit price is "+ Number(priceChart[key[0]-1]) +  "</div>" );
-            output.push("<button class=\"btn-danger\" type = \"button\" onclick = \"remove(" + key[0]+ ")\"> REMOVE </button> <br><br><br>");
-
-
+            output.push("<td> <img src=\"./resources/product"+key[0]+".jpg\" style=\"width:600px;height:400px;>\" </td>");//jpg
+            output.push("<td >" + "item is "+key[0] +  "</td>")//id
+            output.push("<td >" + "unit price is "+ Number(priceChart[key[0]-1]) +  "</td>" );  
+            output.push("<td >" + "count is "+ key[1] +  "</td>" )//name
+            output.push("<td> <button class=\"btn-danger\" type = \"button\" onclick = \"remove(" + key[0]+ ")\"> REMOVE </button> </td>");
 
 
-            output.push("</div>");
+
+
+            output.push("</tr>");
             //later
         } else {}
     }
+    output.push("</table><br>");
     console.log(cartThings);
     output.push("<div class=\"form-container2\">");
     output.push("<form class=\"form\">");
-    output.push("<div >" + "total price is "+ totalPrice +  "</div>" );
-    output.push("<button type=\"button\" class=\"form-button\" id = \"tocheckoutpage\" onclick=\"paynow()\">Checkout</button>");
+    //output.push("<div >" + "total price is "+ totalPrice +  "</div>" );
+    output.push("<button type=\"button\" class=\"form-button\" id = \"tocheckoutpage\" onclick=\"paynow()\">Checkout<br>Total Price: "+totalPrice +"</button>");
     output.push("</form>");
     output.push("</div>");
     content = output.join(" ");

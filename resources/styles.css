@@ -754,7 +754,7 @@ input#q9{
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	min-height: 150px;
+	min-height: 100px;
 	color: whitesmoke;
 
 }
@@ -766,9 +766,9 @@ input#q9{
 	background-color: rgba(0,0,0, 0.75);
 }
 .form-container2 .form{
-	margin: 100px auto;
+	margin: 0px auto;
 	max-width: 320px;
-	padding: 45px;
+	padding: 15px;
 	background-color: rgba(0,0,0, 0.75);
 }
 
@@ -1042,3 +1042,4 @@ input#q9{
 	width: 100%;
     height: 400px;
 }
+

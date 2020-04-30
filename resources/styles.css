@@ -1011,3 +1011,25 @@ input#q9{
 	width: 100%;
     height: 400px;
 }
+
+/*account page */
+
+.account-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.columleft {
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 6
+}
+
+.columnright {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 6
+}

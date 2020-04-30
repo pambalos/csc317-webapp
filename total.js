@@ -191,7 +191,7 @@ function load(){
             output.push("<td >" + "Item hash key: "+ makeid(8) +  "</td>")//id
             output.push("<td >" + "Unit Price: "+ Number(priceChart[key[0]-1]) +  "</td>" );  
             output.push("<td >" + "Amount: "+ key[1] +  "</td>" )//name
-            output.push("<td> <button class=\"btn-danger\" type = \"button\" onclick = \"remove(" + key[0]+ ")\"> REMOVE </button> </td>");
+            output.push("<td> <button class=\"button2\" type = \"button\" onclick = \"remove(" + key[0]+ ")\"> REMOVE </button> </td>");
 
 
 
@@ -200,7 +200,7 @@ function load(){
             //later
         } else {}
     }
-    output.push("</table>");
+    output.push("</table>   ");
     console.log(cartThings);
     output.push("<div class=\"form-container2\">");
     output.push("<form class=\"form\">");

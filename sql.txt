@@ -1,0 +1,60 @@
+-- CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+CREATE USER IF NOT EXISTS web@localhost IDENTIFIED BY 'web317';
+DROP DATABASE IF EXISTS `GY2020`;
+SET default_storage_engine=InnoDB;
+SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS GY2020
+    DEFAULT CHARACTER SET utf8mb4
+    DEFAULT COLLATE utf8mb4_unicode_ci;
+USE GY2020;
+GRANT SELECT, INSERT, UPDATE, DELETE, FILE ON *.* TO 'web'@'localhost';
+GRANT ALL PRIVILEGES ON `web`.* TO 'web'@'localhost';
+GRANT ALL PRIVILEGES ON ` GY2020`.* TO 'web'@'localhost';
+FLUSH PRIVILEGES;
+
+-- Tables
+ 
+CREATE TABLE `User`(
+    Username varchar(50) NOT NULL,
+    Password varchar(50) NOT NULL,
+    EmailAddress varchar(50) DEFAULT NULL,
+    FirstName varchar(50) NOT NULL,
+    LastName varchar(50) NOT NULL,
+    PRIMARY KEY (Username)
+);
+
+CREATE TABLE PaymentMethod(
+    Username varchar(50) NOT NULL,
+    CardNumber bigint NOT NULL,
+    CVV int NOT NULL,
+    Expiration DATE NOT NULL,
+    Zipcode int NOT NULL,
+    PRIMARY KEY (Username),
+    CONSTRAINT fk_PaymentMethod_to_User FOREIGN KEY (Username) REFERENCES User (Username)
+);
+
+CREATE TABLE Product(
+    ProductID int NOT NULL,
+    ImgSrc varchar(128) NOT NULL,
+    Price int NOT NULL,
+    PRIMARY KEY (ProductID)
+);
+
+CREATE TABLE Cart(
+    Username varchar(50) NOT NULL,
+    ProductID int NOT NULL,
+    Amount int DEFAULT 1,
+    PRIMARY KEY (Username, ProductID),
+    CONSTRAINT fk_Cart_to_User FOREIGN KEY (Username) REFERENCES User (Username),
+    CONSTRAINT fk_Cart_to_Product FOREIGN KEY (ProductID) REFERENCES Product (ProductID)
+);
+
+CREATE TABLE History(
+    Username varchar(50) NOT NULL,
+    ProductID int NOT NULL,
+    PurchaseDate datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    Amount int DEFAULT 1,
+    PRIMARY KEY (Username, ProductID),
+    CONSTRAINT fk_History_to_User FOREIGN KEY (Username) REFERENCES User (Username),
+    CONSTRAINT fk_History_to_Product FOREIGN KEY (ProductID) REFERENCES Product (ProductID)
+);

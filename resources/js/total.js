@@ -211,7 +211,7 @@ function load(){
     content = output.join(" ");
     if (ct == 0){
         //console.log("here");
-        content = '<div>  <div class="a-column a-span8 a-span-last"> <div class="a-row sc-your-cart-is-empty"> <h2> Your cart is empty </h2>        </div>        <div class="a-row sc-shop-todays-deals-link">          <a class="a-link-normal" href="productspage.html">            Shop deals now         </a>        </div>      </div> </div>';
+        content = '<div>  <div class="a-column a-span8 a-span-last"> <div class="a-row sc-your-cart-is-empty"> <h2> Your cart is empty </h2>        </div>        <div class="a-row sc-shop-todays-deals-link">          <a class="a-link-normal" href="../../productspage.html">            Shop deals now         </a>        </div>      </div> </div>';
     }
     var el = document.getElementById('display');
     //el.insertAdjacentHTML('display', content);
@@ -246,7 +246,7 @@ function checked(){
     }else{
 
     alert("Thanks for the donation. Time to report replace your credit card now.");
-    window.location = "./productspage.html"; // Redirecting to other page.
+    window.location = "productspage.html"; // Redirecting to other page.
     return false;
 }
 }

@@ -29,7 +29,7 @@ CREATE TABLE PaymentMethod(
     CVV int NOT NULL,
     Expiration DATE NOT NULL,
     Zipcode int NOT NULL,
-    PRIMARY KEY (Username),
+    PRIMARY KEY (Username, CardNumber),
     CONSTRAINT fk_PaymentMethod_to_User FOREIGN KEY (Username) REFERENCES User (Username)
 );
 

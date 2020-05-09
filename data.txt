@@ -1,0 +1,55 @@
+INSERT INTO User
+VALUES ('user1', 'pass1', '1@caltech.edu', 'fname1', 'lname1');
+INSERT INTO User
+VALUES ('user2', 'pass2', '2@caltech.edu', 'fname2', 'lname2');
+INSERT INTO User
+VALUES ('user3', 'pass3', '3@caltech.edu', 'fname3', 'lname3');
+
+INSERT INTO paymentmethod
+VALUES ('user1', '111', '111', '2004-01-22', '98765');
+INSERT INTO paymentmethod
+VALUES ('user2', '222', '222', '2004-01-22', '12345');
+INSERT INTO paymentmethod
+VALUES ('user3', '333', '333', '2004-01-22', '56789');
+INSERT INTO paymentmethod
+VALUES ('user3', '33302', '334', '2004-01-22', '85274');
+
+
+INSERT INTO product
+VALUES ('1', './resources/product1.jpg', '20');
+INSERT INTO product
+VALUES ('2', './resources/product2.jpg', '30');
+INSERT INTO product
+VALUES ('3', './resources/product3.jpg', '20');
+INSERT INTO product
+VALUES ('4', './resources/product4.jpg', '20');
+INSERT INTO product
+VALUES ('5', './resources/product5.jpg', '10');
+INSERT INTO product
+VALUES ('6', './resources/product6.jpg', '20');
+INSERT INTO product
+VALUES ('7', './resources/product7.jpg', '50');
+INSERT INTO product
+VALUES ('8', './resources/product8.jpg', '20');
+INSERT INTO product
+VALUES ('9', './resources/product9.jpg', '20');
+INSERT INTO product
+VALUES ('10', './resources/product10.jpg', '10');
+INSERT INTO product
+VALUES ('11', './resources/product11.jpg', '40');
+INSERT INTO product
+VALUES ('12', './resources/product12.jpg', '1000');
+
+INSERT INTO history
+VALUES ('user1', '12', now(), '1');
+INSERT INTO history
+VALUES ('user1', '2', now(), '2');
+INSERT INTO history
+VALUES ('user2', '4', '2004-01-22', '1');
+
+INSERT INTO cart
+VALUES ('user1', '12', '1');
+INSERT INTO cart
+VALUES ('user1', '2', '2');
+INSERT INTO cart
+VALUES ('user2', '4', '1');

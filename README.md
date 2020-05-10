@@ -1,10 +1,14 @@
 # csc317-webapp
 Repository for CSC 317 webapp. This repository will represent the files sitting at directory /var/www/html/ on the virtual image.
 
+Working directory for apache sources is ./
+
 ## Structure
-./ -> any HTML files
+./ -> any PHP and HTML files 
 
 ./resources -> any images, css, or other resource files
+./resources/js -> for javascript files
+./resources/static -> for images and css files
 
 ## Commit Process
 

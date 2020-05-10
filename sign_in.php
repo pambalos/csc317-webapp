@@ -76,6 +76,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
   }
 }
-
+include('lib/error.php');
 include("sign_in.html");
 ?>

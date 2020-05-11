@@ -35,26 +35,29 @@ CREATE TABLE PaymentMethod(
 
 CREATE TABLE Product(
     ProductID int NOT NULL,
+    Name varchar(128) NOT NULL,
     ImgSrc varchar(128) NOT NULL,
     Price int NOT NULL,
-    PRIMARY KEY (ProductID)
+    PRIMARY KEY (ProductID, Name)
 );
 
 CREATE TABLE Cart(
     Username varchar(50) NOT NULL,
     ProductID int NOT NULL,
+    Name varchar(128) NOT NULL,
     Amount int DEFAULT 1,
     PRIMARY KEY (Username, ProductID),
     CONSTRAINT fk_Cart_to_User FOREIGN KEY (Username) REFERENCES User (Username),
-    CONSTRAINT fk_Cart_to_Product FOREIGN KEY (ProductID) REFERENCES Product (ProductID)
+    CONSTRAINT fk_Cart_to_Product FOREIGN KEY (ProductID, Name) REFERENCES Product (ProductID, Name)
 );
 
 CREATE TABLE History(
     Username varchar(50) NOT NULL,
     ProductID int NOT NULL,
+    Name varchar(128) NOT NULL,
     PurchaseDate datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     Amount int DEFAULT 1,
     PRIMARY KEY (Username, ProductID),
     CONSTRAINT fk_History_to_User FOREIGN KEY (Username) REFERENCES User (Username),
-    CONSTRAINT fk_History_to_Product FOREIGN KEY (ProductID) REFERENCES Product (ProductID)
+    CONSTRAINT fk_History_to_Product FOREIGN KEY (ProductID, Name) REFERENCES Product (ProductID, Name)
 );

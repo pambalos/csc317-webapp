@@ -16,40 +16,40 @@ VALUES ('user3', '33302', '334', '2004-01-22', '85274');
 
 
 INSERT INTO product
-VALUES ('1', './resources/product1.jpg', '20');
+VALUES ('1', 'I heart U', './resources/product1.jpg', '20');
 INSERT INTO product
-VALUES ('2', './resources/product2.jpg', '30');
+VALUES ('2', 'GeoLocation', './resources/product2.jpg', '30');
 INSERT INTO product
-VALUES ('3', './resources/product3.jpg', '20');
+VALUES ('3', 'Java Length Converter', './resources/product3.jpg', '20');
 INSERT INTO product
-VALUES ('4', './resources/product4.jpg', '20');
+VALUES ('4', 'Slides Show', './resources/product4.jpg', '20');
 INSERT INTO product
-VALUES ('5', './resources/product5.jpg', '10');
+VALUES ('5', 'Responsive Image Gallery', './resources/product5.jpg', '10');
 INSERT INTO product
-VALUES ('6', './resources/product6.jpg', '20');
+VALUES ('6', 'Check palindrome', './resources/product6.jpg', '20');
 INSERT INTO product
-VALUES ('7', './resources/product7.jpg', '50');
+VALUES ('7', 'Hack professor computer', './resources/product7.jpg', '50');
 INSERT INTO product
-VALUES ('8', './resources/product8.jpg', '20');
+VALUES ('8', 'AAA for everybody', './resources/product8.jpg', '20');
 INSERT INTO product
-VALUES ('9', './resources/product9.jpg', '20');
+VALUES ('9', 'Google Guava', './resources/product9.jpg', '20');
 INSERT INTO product
-VALUES ('10', './resources/product10.jpg', '10');
+VALUES ('10', 'Hello World', './resources/product10.jpg', '10');
 INSERT INTO product
-VALUES ('11', './resources/product11.jpg', '40');
+VALUES ('11', 'Stack',  './resources/product11.jpg', '40');
 INSERT INTO product
-VALUES ('12', './resources/product12.jpg', '1000');
+VALUES ('12','Transform the world',  './resources/product12.jpg', '1000');
 
 INSERT INTO history
-VALUES ('user1', '12', now(), '1');
+VALUES ('user1', '12',  'Transform the world', now(), '1');
 INSERT INTO history
-VALUES ('user1', '2', now(), '2');
+VALUES ('user1', '2', 'GeoLocation', now(), '2');
 INSERT INTO history
-VALUES ('user2', '4', '2004-01-22', '1');
+VALUES ('user2', '4', 'Slides Show', '2004-01-22', '1');
 
 INSERT INTO cart
-VALUES ('user1', '12', '1');
+VALUES ('user1', '12', 'Transform the world', '1');
 INSERT INTO cart
-VALUES ('user1', '2', '2');
+VALUES ('user1', '2', 'GeoLocation', '2');
 INSERT INTO cart
-VALUES ('user2', '4', '1');
+VALUES ('user2', '4', 'Slides Show',  '1');

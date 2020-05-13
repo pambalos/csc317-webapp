@@ -805,7 +805,7 @@ input#q9{
 	outline: none;
 }
 
-.form-container .form .form-button{
+.form-button {
 	background-color: #00ccff;
 	color: white;
 	padding: 16px 20px;
@@ -817,6 +817,19 @@ input#q9{
 	font-style: italic;
 	font-weight: bold;
 }
+
+.form-container .form .form-button{
+	 background-color: #00ccff;
+	 color: white;
+	 padding: 16px 20px;
+	 border: none;
+	 cursor: pointer;
+	 width: 100%;
+	 opacity: 0.8;
+	 font-size: 1.2em;
+	 font-style: italic;
+	 font-weight: bold;
+ }
 .form-container2 .form .form-button{
 	background-color: #00ccff;
 	color: white;

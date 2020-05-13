@@ -49,9 +49,6 @@ function load(){
             output.push("<td >" + "Amount: "+ key[1] +  "</td>" )//name
             output.push("<td> <button class=\"button2\" type = \"button\" onclick = \"remove(" + key[0]+ ")\"> REMOVE </button> </td>");
 
-
-
-
             output.push("</tr>");
             //later
         } else {}

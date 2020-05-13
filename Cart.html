@@ -8,8 +8,7 @@
   <link rel="stylesheet" type="text/css" href="resources/static/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
+  <script src="resources/js/cart.js"></script>
 
 
   
@@ -20,12 +19,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     -->
 </head>
-<script src="resources/js/total.js"></script>
+<!--
+<script src="resources/js/total.js"></script> -->
 <script src="./individualProducts/loadpage.js"></script>
+<!--
 <script>
   update();
   try{
-  if (userpass["in"] == "true") {
+  if (userpass["in"] === "true") {
   } else {
     alert("What are you thinking. Go to Sign in.")
     window.location = "sign_in.html"; // Redirecting to other page.
@@ -34,7 +35,7 @@
     setCookie("in", false);
     update();
   }
-</script>
+</script> -->
 
 <body>
 
@@ -63,7 +64,7 @@
           <a href="account.html">Account</a>
         </div>
       </div>
-      <a class="active" href="Cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+      <a class="active" href="Cart.php"><i class="fa fa-shopping-cart"></i> Cart</a>
     </div>
   </nav>
 

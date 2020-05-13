@@ -61,3 +61,17 @@ CREATE TABLE History(
     CONSTRAINT fk_History_to_User FOREIGN KEY (Username) REFERENCES User (Username),
     CONSTRAINT fk_History_to_Product FOREIGN KEY (ProductID, Name) REFERENCES Product (ProductID, Name)
 );
+
+insert into product value (1, 'I Heart U', '../resources/static/product1.jpg', 20);
+insert into product value (2, 'Geolocation', '../resources/static/product2.jpg', 30);
+insert into product value (3, 'Length Converter', '../resources/static/product3.jpg', 20);
+insert into product value (4, 'Slides Show', '../resources/static/product4.jpg', 20);
+insert into product value (5, 'Gallery', '../resources/static/product5.jpg', 10);
+insert into product value (6, 'Check Palindrome', '../resources/static/product6.jpg', 20);
+insert into product value (7, 'Hack Professor''s computer', '../resources/static/product7.jpg', 50);
+insert into product value (8, 'AAA for EveryBody', '../resources/static/product8.jpg', 20);
+insert into product value (9, 'Google Guava', '../resources/static/product9.jpg', 20);
+insert into product value (10, 'Hello World', '../resources/static/product10.jpg', 10);
+insert into product value (11, 'Stack', '../resources/static/product11.jpg', 40);
+insert into product value (12, 'Transform the World', '../resources/static/product12.jpg', 1000);
+

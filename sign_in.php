@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         array_push($query_msg, "Password is Valid! ");
         $_SESSION['Username'] = $enteredUsername;
         array_push($query_msg, "logging in... ");
-        header(REFRESH_TIME . 'url=Cart.html');    //to view the password hashes and login success/failure
+        header(REFRESH_TIME . 'url=Cart.php');    //to view the password hashes and login success/failure
 
       } else {
         array_push($error_msg, "Login failed: " . $enteredUsername . NEWLINE);

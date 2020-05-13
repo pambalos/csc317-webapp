@@ -14,8 +14,8 @@ function setCookie(name, value) {
     document.cookie = name + "=" + value+("; path=/");
 }
 
-setCookie("user03", "pass03");
-setCookie("user04", "pass04");
+//setCookie("user03", "pass03");
+//setCookie("user04", "pass04");
 // function listCookies() {
 //     var result = document.cookie;
 //     document.getElementById("temp").innerHTML=result;
@@ -34,7 +34,7 @@ function update() {
             userpass[key[0].trim()] = key[1];
         }
     }
-    //console.log(userpass);
+    console.log(userpass);
 }
 function removeCookies(togo) {
     var res = document.cookie;
@@ -57,9 +57,9 @@ function validate() {
         alert("Login successfully");
         console.log("success");
         update();
-        attempt = 3
+        attempt = 3;
         setCookie("in",true);
-        window.location = "Cart.html"; // Redirecting to other page.
+        window.location = "Cart.php"; // Redirecting to other page.
         return false;
     }
     else {

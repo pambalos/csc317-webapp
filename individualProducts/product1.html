@@ -34,7 +34,7 @@
                 <a href="../account.html">Account</a>
               </div>
         </div> 
-        <a href="../Cart.html"><i class="fa fa-shopping-cart"></i> Cart</a> 
+        <a href="../Cart.php"><i class="fa fa-shopping-cart"></i>Cart</a>
     </div>
 </nav>
 
@@ -64,7 +64,10 @@
 
             <div class="price">
                 <span>$20.00</span>
-                <a href="#" class="cart-btn" onclick="addProduct(1)">Add to cart</a>
+                <form method="post">
+                    <input type="submit" name="submitButton" class="cart-btn" value="Add To Cart">
+                </form>
+                <!-- <a href="#" class="cart-btn" onclick="addToCart()">Add to cart</a> -->
             </div>
         </div>
     </div>

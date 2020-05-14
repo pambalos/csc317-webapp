@@ -22,7 +22,7 @@ $query2 = "select Price from product;";
 $result2 = mysqli_query($db, $query2);
 $arrayofrows = array();
 while($r = mysqli_fetch_array($result2)) {
-    $arrayofrows = $r;
+    array_push($arrayofrows, $r['Price']);
 }
 console_log("res2");
 console_log($arrayofrows);
@@ -30,7 +30,7 @@ console_log($arrayofrows);
 $totalPrice = 0;
 
 while($r = mysqli_fetch_array($r2)) {
-    $totalPrice += $r['Amount']*$arrayofrows[$r['ProductID']];
+    $totalPrice += $r['Amount']*$arrayofrows[$r['ProductID']-1];
 }
 
 if (array_key_exists('checkout', $_POST)) {
@@ -154,7 +154,7 @@ function checkout() {
         echo "<td> <img src=\"resources/static/product".$row['ProductID'].".jpg\" style=\"width:600px;height:400px;>\" </td>";
         echo "<td >" . "Item Name: ". $row['Name'] .  "</td>";
         echo "<td >" . "Amount: " . $row['Amount'] .  "</td>";
-        echo "<td >" . "Price: " . $arrayofrows[$row['ProductID']]*$row['Amount'] .  "</td>";
+        echo "<td >" . "Price: " . $arrayofrows[$row['ProductID']-1]*$row['Amount'] .  "</td>";
         echo "<td> <form method=\"post\"> <input type=\"submit\" class=\"button2\" value='REMOVE' name='remove" . $row['ProductID'] . "'/> </form> </td>";
     }
     if ($count > 0) {
@@ -166,7 +166,7 @@ function checkout() {
         output.push("</div>");
         */
         echo '<div class="">';
-        echo '<form method="post"> <input type="submit" class="form-button" value="Checkout" name="checkout" style="background-color: #00ccff;
+        echo '<form method="post"> <input type="submit" class="form-button" value="Checkout: $' . $totalPrice . '" name="checkout" style="background-color: #00ccff;
 	color: white;
 	padding: 20px;
 	border: none;

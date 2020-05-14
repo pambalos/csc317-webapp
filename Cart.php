@@ -135,7 +135,7 @@ function checkout() {
           <a href="sign_in.html">Sign In</a>
           <a href="register.php">Sign Up</a>
           <a onclick = "signout()" href="sign_in.html">Sign Out</a>
-          <a href="account.html">Account</a>
+          <a href="account.php">Account</a>
         </div>
       </div>
       <a class="active" href="Cart.php"><i class="fa fa-shopping-cart"></i> Cart</a>

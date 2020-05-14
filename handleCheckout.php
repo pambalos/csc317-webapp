@@ -36,6 +36,10 @@ while ($product = mysqli_fetch_row($result)) {
     console_log($query);
     $res = mysqli_query($db, $query);
     console_log($res);
+    if ($res == true) {
+        $deleteQuery = "delete from cart where Username = " . "\"" . $_SESSION['Username'] . "\"";
+        mysqli_query($db, $query);
+    }
 }
 
 console_log($_GET[email]);

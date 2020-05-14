@@ -47,41 +47,34 @@
 
 
 <div class="form-container">
-  <form class="form"> 
+  <form class="form" action="handleRegister.php">
     <h2>Create Account</h2>
     <p>Already have an account?  <a href="sign_in.html" class="account"> Sign in.</a></p>
     <p style="font-size: 0.6em;"><font color="red">*</font>Required</p>
+
+    <label for="addusername"><b><font color="red">*</font>Username</b></label><br>
+    <input type="text" placeholder="Username" name="username" id="addusername" maxlength="30" size="30" required/><br><br>
+
     <label for="fname"><b></b><font color="red"></font>First Name </b></label><br>
     <input type="text" placeholder="Enter first name" name="fname" maxlength="30" size="30" /><br><br>
         
     <label for="lname"><b><font color="red"></font>Last Name</b></label><br>
-    <input type="text" placeholder="Enter last name" name="lname" maxlength="30" size="30" /><br><br>
+    <input type="text" id="lname" placeholder="Enter last name" name="lname" maxlength="30" size="30" /><br><br>
 
-    <label for="email"><b><font color="red">*</font>Email</b></label><br>
-    <input type="text" placeholder="Enter Email" name="email" id="addusername" maxlength="30" size="30" required/><br><br>
+    <label for="addemail"><b><font color="red">*</font>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" name="email" id="addemail" maxlength="30" size="30" required/><br><br>
         
     <label for="psw"><b><font color="red">*</font>Create Password</b></label><br>
-    <input type="password" placeholder="Enter Password" name="psw" id="addpassword" maxlength="30" size="30" required/><br><br>
+    <input type="password" id = "psw" placeholder="Enter Password" name="psw" id="addpassword" maxlength="30" size="30" required/><br><br>
 
 
     <p>By creating an account, you agree to our <a href="privacy.html">Privacy Policy</a>and <a href="terms_and_conditions.html">Terms & Conditions.</a></p>
     <button type="submit" class="form-button" onclick="addUser()">Create Account</button>
   </form>
 
-
-
-
-
-
   <!-- <h1>Cookies List</h1>
       <p id="temp"></p>
       <button onclick='listCookies()'>LIST COOKIES</button><br> -->
-
-
-
-
-
-
 
 </div>
 
@@ -89,7 +82,7 @@
 <footer class="footer-distributed">
  
   <div class="footer-left">
-      <img src="resources/Gold_for_Code.jpg">
+      <img src="resources/static/Gold_for_Code.jpg">
     <h3>With US<br><span>Coding is to be simple</span></h3>
 
     <p class="footer-links">

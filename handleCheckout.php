@@ -79,7 +79,7 @@ header(REFRESH_TIME . 'url=About.html');
             <div class="dropdown-content">
                 <a href="sign_in.html">Sign In</a>
                 <a href="register.html">Sign Up</a>
-                <a href="account.html">Account</a>
+                <a href="account.php">Account</a>
             </div>
         </div>
         <a href="Cart.php"><i class="fa fa-shopping-cart"></i> Cart</a>

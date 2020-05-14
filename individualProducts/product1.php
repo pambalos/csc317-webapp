@@ -53,6 +53,7 @@ function addToCart($productId) {
         $res = mysqli_query($db, $updateQuery);
         console_log("Update res:");
         console_log($res);
+        echo '<div style="align-content: center"> <h3 style="align-content: center;"> Added Item to Cart! </h3> </div>';
 
     } else {
         console_log("Must Create Cart");
@@ -62,8 +63,11 @@ function addToCart($productId) {
             $res = mysqli_query($db, $query);
             console_log($query);
             console_log($res);
+
+            echo '<div style="align-content: center"> <h3 style="align-content: center;"> Added Item to Cart! </h3> </div>';
         }
     }
+
 }
 
 include("product1.html");

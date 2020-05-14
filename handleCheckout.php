@@ -36,20 +36,12 @@ while ($product = mysqli_fetch_row($result)) {
     console_log($query);
     $res = mysqli_query($db, $query);
     console_log($res);
-    if ($res == true) {
-        $deleteQuery = "delete from cart where Username = " . "\"" . $_SESSION['Username'] . "\"";
-        mysqli_query($db, $query);
-    }
+    $deleteQuery = "delete from cart where Username = " . "\"" . $_SESSION['Username'] . "\"" . " and ProductID = " . $product[1];
+    console_log($deleteQuery);
+    $r = mysqli_query($db, $deleteQuery);
+    console_log($r);
 }
 
-console_log($_GET[email]);
-
-$msg = "You purchased stuff! Congratz! Download them on the website";
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
-$sent = mail($_GET[email],"Your Purchase",$msg);
-console_log("Sending Mail: ");
-console_log($sent);
 
 header(REFRESH_TIME . 'url=About.html');
 

@@ -195,6 +195,5 @@ output.push("</tr>"); */
     }
 
     ?>
-
 </body>
 </html>

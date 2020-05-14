@@ -52,21 +52,18 @@
 </nav>
 
 
-
+<!--
 <style>
     body {
         padding-top: 70px;
         padding-left: 30px;
         padding-right: 30px;
     }
-</style>
+</style> -->
 
 <body>
-
-    
-
     <div class="form-container">
-        <form class="form"> 
+        <form class="form" action="handleCheckout.php">
           <h2><b>Checkout Now</b></h2>
           
           <label for="email"><b>Receiver Email</b></label><br>
@@ -87,12 +84,13 @@
           <br>
           <input type="checkbox" checked="unchecked" name="remember"> Save this for future payment. <br>
           <p>By clicking checkout button, you agree to our <a href="privacy.html">Privacy Policy</a>and <a href="terms_and_conditions.html">Terms & Conditions.</a></p>
-          <button type="button" class="form-button" id = "submit" onclick="checked()">Checkout</button>
+
+          <form method="post" action="handleCheckout.php">
+            <input type="submit" name="submitButton" class="form-button" value="Checkout">
+          </form>
+
+          <!--<button type="button" class="form-button" id = "submit" onclick="checked()">Checkout</button>-->
         </form>
       </div>
-
-
-
-</body>
-
+  </body>
 </html>

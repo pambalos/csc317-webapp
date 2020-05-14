@@ -191,7 +191,7 @@ output.push("</tr>"); */
         //echo "<form method=\"post\"> <input type=\"submit\" class=\"form-button\" value='Total Price: " . $totalPrice . "' name='checkout'/> </form>";
         echo '</div>';
     } else {
-        echo '<div>  <div class="a-column a-span8 a-span-last"> <div class="a-row sc-your-cart-is-empty"> <h2> Your cart is empty </h2>        </div>        <div class="a-row sc-shop-todays-deals-link">          <a class="a-link-normal" href="productspage.html">            Shop deals now         </a>        </div>      </div> </div>';
+        echo '<div style="align-content: center; width: 100%">  <div class="a-column a-span8 a-span-last"> <div class="a-row sc-your-cart-is-empty"> <h2> Your cart is empty </h2>        </div>        <div class="a-row sc-shop-todays-deals-link">          <a class="a-link-normal" href="productspage.html">            Shop deals now         </a>        </div>      </div> </div>';
     }
 
     ?>

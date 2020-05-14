@@ -112,15 +112,20 @@ console_log($user);
     </form>
 
     <?php
-    echo '<div style="width: 100%; height: 80px; align-content: center"> <h3 style="color: white">Purchase History</h3> </div>';
-    echo "<table style='width: 100%; background-color: black'>";
-    while($row = mysqli_fetch_array($res2)) {
-        console_log($row);
-        echo "<tr>";
-        echo "<td> <img src=\"resources/static/product".$row['ProductID'].".jpg\" style=\"width:500px;height:180px;object-fit: cover>\" </td>";
-        echo "<td >" . "Item Name: ". $row['Name'] .  "</td>";
-        echo "<td >" . "Amount: " . $row['Amount'] .  "</td>";
-        echo "<td colspan='2'>" . "Purchase Date: " . $row['PurchaseDate'] . "</td>";
+    $count = mysqli_field_count($res2);
+    console_log("Count is");
+    console_log($count);
+    if ($count > 0) {
+        echo '<div style="width: 100%; height: 80px; align-content: center"> <h3 style="color: white">Purchase History</h3> </div>';
+        echo "<table style='width: 100%; background-color: black'>";
+        while($row = mysqli_fetch_array($res2)) {
+            console_log($row);
+            echo "<tr>";
+            echo "<td> <img src=\"resources/static/product".$row['ProductID'].".jpg\" style=\"width:500px;height:180px;object-fit: cover>\" </td>";
+            echo "<td >" . "Item Name: ". $row['Name'] .  "</td>";
+            echo "<td >" . "Amount: " . $row['Amount'] .  "</td>";
+            echo "<td colspan='2'>" . "Purchase Date: " . $row['PurchaseDate'] . "</td>";
+        }
     }
     ?>
 </div> <!--end of form-container-->

@@ -64,9 +64,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if (password_verify($enteredPassword, $storedHash)) {
                 array_push($query_msg, "Password is Valid! ");
                 $_SESSION['Username'] = $enteredUsername;
+
+                $query = "insert into user value (" . "\"" . $_POST['username'] . "\", \"" . $_POST['psw'] . "\", \"" . $_POST['email'] . "\", \"" . $_POST['fname'] . "\", \"" . $_POST['lname'] . "\")" ;
+                console_log($query);
+                $res = mysqli_query($db, $query);
+
+                if ($res == true) {
+                    array_push($query_msg, "Saving login info...");
+                }
+
                 array_push($query_msg, "logging in... ");
                 header(REFRESH_TIME . 'url=Cart.php');    //to view the password hashes and login success/failure
-
             } else {
                 array_push($error_msg, "Login failed: " . $enteredUsername . NEWLINE);
                 array_push($error_msg, "To demo enter: " . NEWLINE . "user1" . NEWLINE . "pass1");

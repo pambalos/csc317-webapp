@@ -132,6 +132,7 @@ function checkout() {
           <i class="fa fa-fw fa-user"></i> Sign In <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
+
           <a href="sign_in.html">Sign In</a>
           <a href="register.php">Sign Up</a>
           <a onclick = "signout()" href="sign_in.html">Sign Out</a>
@@ -144,19 +145,6 @@ function checkout() {
 
   <!-- referenced from AMZN cart -->
   <div id="display"></div>
-
-  <?php
-    /*
-  output.push("<tr>");
-
-output.push("<td> <img src=\"resources/static/product"+key[0]+".jpg\" style=\"width:600px;height:400px;>\" </td>");//jpg
-output.push("<td >" + "Item hash key: "+ makeid(8) +  "</td>")//id
-output.push("<td >" + "Unit Price: "+ Number(priceChart[key[0]-1]) +  "</td>" );
-output.push("<td >" + "Amount: "+ key[1] +  "</td>" )//name
-output.push("<td> <button class=\"button2\" type = \"button\" onclick = \"remove(" + key[0]+ ")\"> REMOVE </button> </td>");
-
-output.push("</tr>"); */
-  ?>
 
     <?php
     echo "<table>";

@@ -23,10 +23,9 @@ console_log($_SESSION['Username']);
 $db = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_SCHEMA, DB_PORT);
 $query = "select * from user where Username = ". "'" . $_SESSION['Username'] ."'";
 $query2 = "select * from history where Username = ". "'" . $_SESSION['Username'] ."'";
+
 $res1 = mysqli_query($db, $query);
 $res2 = mysqli_query($db, $query2);
-
-console_log("something at least");
 
 $user = array();
 $arr2 = array();
@@ -112,7 +111,7 @@ console_log($user);
     </form>
 
     <?php
-    $count = mysqli_field_count($res2);
+    $count = mysqli_num_rows($res2);
     console_log("Count is");
     console_log($count);
     if ($count > 0) {

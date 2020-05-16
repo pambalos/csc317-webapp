@@ -147,14 +147,14 @@ function checkout() {
   <div id="display"></div>
 
     <?php
-    echo "<table>";
+    echo "<table style=\"margin: 30px 50px;\">";
     while ($row = mysqli_fetch_array($result)) {
         console_log($row);
         echo "<tr>";
-        echo "<td> <img src=\"resources/static/product".$row['ProductID'].".jpg\" style=\"width:600px;height:400px;>\" </td>";
-        echo "<td >" . "Item Name: ". $row['Name'] .  "</td>";
-        echo "<td >" . "Amount: " . $row['Amount'] .  "</td>";
-        echo "<td >" . "Price: " . $arrayofrows[$row['ProductID']-1]*$row['Amount'] .  "</td>";
+        echo "<td> <img src=\"resources/static/product".$row['ProductID'].".jpg\" style=\"width:200px;height:100px;>\" </td>";
+        echo "<td style=\"color:#CFAC79; text-shadow: 1px 1px 3px whitesmoke; font-family: bold; font-size: 20px; margin-left:10px; \">" . $row['Name'] .  "</td>";
+        echo "<td style=\"color:#CFAC79; text-shadow: 1px 1px 3px whitesmoke; font-family: bold; font-size: 20px; margin-left:20px;\">" . "Amount: " . $row['Amount'] .  "</td>";
+        echo "<td style=\"color:#CFAC79; text-shadow: 1px 1px 3px whitesmoke; font-family: bold; font-size: 20px; margin-left:20px;\">" . "Price: " . "$" . $arrayofrows[$row['ProductID']-1]*$row['Amount'] .  "</td>";
         echo "<td> <form method=\"post\"> <input type=\"submit\" class=\"button2\" value='REMOVE' name='remove" . $row['ProductID'] . "'/> </form> </td>";
     }
     if ($count > 0) {
@@ -165,21 +165,32 @@ function checkout() {
         output.push("</form>");
         output.push("</div>");
         */
-        echo '<div class="">';
-        echo '<form method="post"> <input type="submit" class="form-button" value="Checkout: $' . $totalPrice . '" name="checkout" style="background-color: #00ccff;
-	color: white;
-	padding: 20px;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-	opacity: 0.8;
-	font-size: 1.2em;
-	font-style: italic;
-	font-weight: bold;"/> </form>';
+        echo '<center><div class="" >';
+        echo '<form method="post"> <input type="submit" class="form-button" value="Checkout NOW!     $' . $totalPrice . '" name="checkout" style="background-color: #00ccff;
+            color: white;
+            padding: 20px;
+            border: grey;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 80%;
+            opacity: 1;
+            font-size: 1.2em;
+            font-style: italic;
+            font-weight: bold;
+            box-shadow: 0 8px 16px 0 grey, 0 6px 20px 0 grey;"/> </form>';
         //echo "<form method=\"post\"> <input type=\"submit\" class=\"form-button\" value='Total Price: " . $totalPrice . "' name='checkout'/> </form>";
-        echo '</div>';
+        echo '</div></center>';
     } else {
-        echo '<div style="align-content: center; width: 100%">  <div class="a-column a-span8 a-span-last"> <div class="a-row sc-your-cart-is-empty"> <h2> Your cart is empty </h2>        </div>        <div class="a-row sc-shop-todays-deals-link">          <a class="a-link-normal" href="productspage.html">            Shop deals now         </a>        </div>      </div> </div>';
+        echo    '<div style="align-content: center; width: 100%"> 
+                    <div class="a-column a-span8 a-span-last"> 
+                        <div class="a-row sc-your-cart-is-empty"> 
+                            <h2> Your cart is empty </h2>       
+                        </div>        
+                        <div class="a-row sc-shop-todays-deals-link">        
+                             <a class="a-link-normal" href="productspage.html">Shop deals now </a>        
+                        </div>      
+                    </div> 
+                </div>';
     }
 
     ?>

@@ -47,13 +47,13 @@ function addToCart($productId) {
     }
 
     if (!empty($result) && ($count > 0)) {
-        console_log("Found Cart");
-        console_log($cartRow);
-        $updateQuery = "update cart set Amount = Amount+1 where Username = " . "'" . $_SESSION['Username'] ."'" . " and ProductID = " . $productId;
-        $res = mysqli_query($db, $updateQuery);
-        console_log("Update res:");
-        console_log($res);
-
+//        console_log("Found Cart");
+//        console_log($cartRow);
+//        $updateQuery = "update cart set Amount = Amount+1 where Username = " . "'" . $_SESSION['Username'] ."'" . " and ProductID = " . $productId;
+//        $res = mysqli_query($db, $updateQuery);
+//        console_log("Update res:");
+//        console_log($res);
+        echo '<script>alert("Item already Added to Cart, We appreciate your business.")</script>';
     } else {
         console_log("Must Create Cart");
         if (!empty($_SESSION)) {
@@ -62,6 +62,7 @@ function addToCart($productId) {
             $res = mysqli_query($db, $query);
             console_log($query);
             console_log($res);
+            echo '<script>alert("Item Added to Cart")</script>';
         }
     }
 }

@@ -43,7 +43,7 @@ while ($product = mysqli_fetch_row($result)) {
 }
 
 
-header(REFRESH_TIME . 'url=About.html');
+header(REFRESH_TIME . 'url=account.php');
 
 ?>
 

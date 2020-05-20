@@ -53,7 +53,7 @@ function addToCart($productId) {
 //        $res = mysqli_query($db, $updateQuery);
 //        console_log("Update res:");
 //        console_log($res);
-          echo '<script>alert("Item already Added to Cart, We appreciate your business.")</script>';
+        echo '<H2>Item already Added to Cart, We appreciate your business.</H2>';
     } else {
         console_log("Must Create Cart");
         if (!empty($_SESSION)) {
@@ -62,7 +62,7 @@ function addToCart($productId) {
             $res = mysqli_query($db, $query);
             console_log($query);
             console_log($res);
-            echo '<script>alert("Item Added to Cart")</script>';
+            echo '<h2>Item Added to Cart</h2>';
         }
     }
 }

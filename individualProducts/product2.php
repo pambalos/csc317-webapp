@@ -58,11 +58,12 @@ function addToCart($productId) {
         console_log("Must Create Cart");
         if (!empty($_SESSION)) {
             console_log("Found Session");
-            $query = 'insert into cart value (' . "'" . $_SESSION['Username'] ."'" . ',' . $productRow['ProductID'] . ',' . "'" . strval($productRow['Name']). "'" . ',' .'1' .')';
+            $query = 'insert into cart value (' . "'" . $_SESSION['Username'] . "'" . ',' . $productRow['ProductID'] . ',' . "'" . strval($productRow['Name']) . "'" . ',' . '1' . ')';
             $res = mysqli_query($db, $query);
             console_log($query);
             console_log($res);
             echo '<h2>Item Added to Cart</h2>';
+        }
     }
 }
 
